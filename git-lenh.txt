@@ -1,0 +1,15 @@
+cac buoc: 
+1. git init: tao thu mua git trong thu muc resource
+2. git status: kiem tra trang thai git
+3. git add index.html: them index.html vao working space, chuan bi commit vao local
+4. git commit -m "commit file index.html": commit file index.html voi dong comment cho de nho
+5. git log: kiem tra log git
+6. git remote add origin http...: gan mot nhan origin de gui len http repository
+6. git config user.name "dominhquan12121994"
+7. git config user.email "dominhquan12121994@gmail.com"
+6. git push -u origin master: day nhan origin len repository voi branch la master, nhap id va pass github
+7. git pull: dong bo file tu repository ve local
+
+## neu 2 nguoi cung sua thi phai git pull truoc, chon code dung roi moi duoc push
+
+8. git clone http...: lay code ca folder chua folder git ve local
