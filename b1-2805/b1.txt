@@ -1,0 +1,27 @@
+co text la co the style
+tim anh chat luong cao
+title, tooltip
+title: tieu de
+tag: the
+attributes: thuoc tinh
+key: tu khoa
+value: gia tri
+meta charset utf-8 : nhung unicode bang ma quoc te vao trang web
+HTML: hypertext markup language
+-markup: danh dau
+-hypertext: sieu van ban
+doctype
+html
+meta
+head
+body
+title
+h1-h6
+p
+a
+img
+ul, ol, li
+br
+hr
+inline css
+
