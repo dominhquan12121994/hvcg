@@ -13,3 +13,4 @@ cac buoc:
 ## neu 2 nguoi cung sua thi phai git pull truoc, chon code dung roi moi duoc push
 
 8. git clone http...: lay code ca folder chua folder git ve local
+9. dang o trong git log go q de thoat ra
