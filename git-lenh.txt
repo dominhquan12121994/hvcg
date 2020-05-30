@@ -14,5 +14,6 @@ cac buoc:
 
 8. git clone http...: lay code ca folder chua folder git ve local
 9. dang o trong git log go q de thoat ra
-leu leu
-hahaha
+
+* cac khai niem trong git
+1. branch: cac nhanh, vi du co 2 features trong 1 app, moi feature do 1 team lam, vay lam 2 branch cho 2 team de lam 2 feature
