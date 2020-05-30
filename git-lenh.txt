@@ -7,8 +7,8 @@ cac buoc:
 6. git remote add origin http...: gan mot nhan origin de gui len http repository
 6. git config user.name "dominhquan12121994"
 7. git config user.email "dominhquan12121994@gmail.com"
-6. git push -u origin master: day nhan origin len repository voi branch la master, nhap id va pass github
-7. git pull: dong bo file tu repository ve local
+6. git push origin master: day nhan origin len repository voi branch la master, nhap id va pass github
+7. git pull origin master: dong bo file tu repository ve local
 
 ## neu 2 nguoi cung sua thi phai git pull truoc, chon code dung roi moi duoc push
 
