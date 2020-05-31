@@ -19,3 +19,4 @@ cac buoc:
 * cac khai niem trong git
 1. branch: cac nhanh, vi du co 2 features trong 1 app, moi feature do 1 team lam, vay lam 2 branch cho 2 team de lam 2 feature
 2. kiem tra remote: git remote -v
+3. origin: dat ten cho repo tren dia chi github la co mot cai repo tren do va tu nay git trong may se hieu origin la ten cua cai kho do
