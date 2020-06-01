@@ -9,3 +9,16 @@ LESSON 2
     document.getElementById("demo").innerHTML = "hello world";
 </script>
 - the above code writes "hello world" into element with id = "demo"
+----------------------
+LESSON 3
+- inline css, internal css, external css
+- attribute target: open a new tab
+- _parent: mo tab trong the cha cua pop up
+- _self: mo tab ngay trong trang
+- lam tat ca bai tap trong file pdf
+- test link bang an danh voi 
+- css>html attribute
+- inline > internal > external: muc do uu tien trong css
+- th in dam, can giua dung cho tr dau tien trong table
+- colspan: merge cac o trong bang table
+- bai 8, 9, 10

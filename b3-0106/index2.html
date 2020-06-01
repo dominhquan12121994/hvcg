@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: green;
+        }
+
+        a:visited {
+            color: pink;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        
+        p {
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="https://google.com" target="_blank">Click to go to google</a> <br>
+    <hr>
+    <a href="https://fb.com" target="_blank">
+        <img src="../source-code.jpg" alt="error" style="width:200px;">
+    </a>
+    <hr>
+    <img src="../source-code.jpg" alt="error" style="width: 400px;" width="10">
+    <hr>
+    <p style="color: blue;">Lorem ipsum dolor sit amet consectetur.</p>
+    <hr>
+    <!-- colspan: merge n o trong cung mot hang -->
+    <table border="1" width="400">
+        <tr>
+            <th>First name</th>
+            <th colspan="2">Last name</th>
+            <!-- <th>Age</th> -->
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Quan</td>
+            <td>Do</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>Thang</td>
+            <td>Nguyen</td>
+            <td>23</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- rowspan: merge n o trong cung 1 cot -->
+    <table border="1" width="400">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td rowspan="2">50</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Quan</td>
+            <td>Do</td>
+            <!-- <td>26</td> -->
+        </tr>
+        <tr>
+            <!-- <td>Thang</td> -->
+            <td>Nguyen</td>
+            <td>23</td>
+        </tr>
+    </table>
+</body>
+</html>
