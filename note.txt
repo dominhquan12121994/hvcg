@@ -21,4 +21,4 @@ LESSON 3
 - inline > internal > external: muc do uu tien trong css
 - th in dam, can giua dung cho tr dau tien trong table
 - colspan: merge cac o trong bang table
-- bai 8, 9, 10
+- bai 8, 9, 10git 
