@@ -1,0 +1,3 @@
+--------------------
+LESSON 2
+- normal class for div, add class for defines new property
