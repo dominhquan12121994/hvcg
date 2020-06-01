@@ -2,3 +2,10 @@
 LESSON 2
 - normal class for div, add class for defines new property
 - reset css
+- all way make script on the last of body tag
+- event onclick of button
+- javascript use method document.getElementById('id') to select a html element
+<script>
+    document.getElementById("demo").innerHTML = "hello world";
+</script>
+- the above code writes "hello world" into element with id = "demo"

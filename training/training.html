@@ -1,0 +1,405 @@
+<!-- h1, p, id, class, color, font-style, font-family, text-align, style -->
+<!-- b, strong, i, em, mark, small, del, ins, sub, sup, blockquote -->
+<!-- thuoc tinh font css google search -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework b2</title>
+    <style>
+        * {
+            /* color: violet; */
+        }
+
+        #p01 {
+            color: red;
+            font-family: fantasy;
+            text-align: right;
+        }
+
+        .h01 {
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .class01, .class02, #p01 {
+            font-family: sans-serif;
+        }
+
+        .class01 {
+            color: red;
+        }
+
+        .class02 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Heading a</h1>
+    <h1 class="h01">This is Heading b</h1>
+    <h1>This is Heading c</h1>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p id="p01">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, saepe?</p>
+    <b>this is bold text</b> <br>
+    <strong>this is strong text</strong> <br>
+    <i>this is italic text</i> <br>
+    <em>this is emphasized text</em> <br>
+    <mark>this is marked text</mark> <br>
+    <small>this is smaller text</small> <br>
+    <del>this is deleled text</del> <br>
+    <ins>this is inserted text</ins> <br>
+    <p>uuu <sub>this is subscript text</sub></p> <br>
+    <p>aaa <sup>this is superscript text</sup></p> <br>
+    <p>
+        Lorem ipsum dolor sit.
+    <blockquote>this is blockquote</blockquote>
+    </p>
+    <p class="class01 class02">this is a paragraph have two class: 01 and 02</p>
+
+    <form action="./action.js">
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name here"> <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <hr>
+    <h1>The select Element</h1>
+    <p>The select element defines a drop-down list:</p>
+    <label for="car">Choose a car:</label>
+    <select name="car" id="car">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <input type="submit" value="Send">
+
+    <hr>
+    <h1>The pre-selected option</h1>
+    <p>you can preselect an option with the selected attribute</p>
+    <label for="car">Choose a car: </label>
+    <select name="car" id="car">
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="bmw" selected>Bmw</option>
+    </select>
+    <input type="submit" value="Send">
+    <hr>
+    <h1>Visible option values</h1>
+    <p>use the size attribute to specify the number of visible values</p>
+    <label for="car">Choose a car: </label>
+    <select name="car" id="car" size="3">
+        <option value="volvo">VOLVO</option>
+        <option value="audi">AUDI</option>
+        <option value="bmw">BMW</option>
+        <option value="vinfast" selected>VINFAST</option>
+
+    </select>
+    <input type="submit" value="Send">
+
+    <hr>
+    <h1>Textarea</h1>
+    <p>the textarea element defines a multi-line input field</p>
+    <textarea name="cat" id="cat" cols="30" rows="10" placeholder="Enter the text here"></textarea>
+    <button type="submit">Send</button>
+
+    <hr>
+    <h1>Styling textarea</h1>
+    <p>use css to change the size of the textarea</p>
+    
+    <form action="./action.js">
+        <textarea name="text" id="text" cols="30" rows="10">This is the paragraph texted</textarea>
+    </form> <br>
+    <!-- <button type="submit" id="btn">Send</button> -->
+    <input type="submit" id="btn" value="Send">
+
+    <hr>
+    <h1>The button Element</h1>
+    <button type="submit" id="btn" onclick="alert('Hello world')">Click Me!</button>
+
+    <hr>
+    <h1>Grouping form data with fieldset</h1>
+    <p>the fieldset element</p>
+    <form action="./action.js">
+        <fieldset>
+            <legend>Personalia</legend>
+            <label for="fname">First name: </label> <br>
+            <input type="text" id="fname" name="fname" placeholder="enter first name here"> <br>
+            <label for="lname">Last name: </label> <br>
+            <input type="text" id="lname" name="lname" placeholder="enter last name here"> <br>
+            <button type="submit">Submit</button>
+        </fieldset>
+        </form>
+
+    <hr>
+    <h1>The datalist Element</h1>
+    <p>the datalist element specifies a list of pre-defined option for an input element</p>
+    <form action="./action.js">
+        <input list="datalist">
+        <datalist id="datalist">
+            <option value="BMW"></option>
+            <option value="AUDI"></option>
+            <option value="VINFAST"></option>
+        </datalist>
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+    <h1>Text field</h1>
+    <p>the <b>input text=""text</b> defines a one-line text input field</p>
+    <form action="./action.js">
+        <label for="fname">First name: </label> <br>
+        <input type="text" id="fname" name="fname" placeholder="enter first name here"> <br>
+        <label for="lname">Last name: </label> <br>
+        <input type="text" id="lname" name="lname" placeholder="enter last name here"> <br>
+        <button id="btn" type="submit">Send</button>
+    </form>
+
+    <hr>
+    <h1>password field</h1>
+    <p>the <b>input type="password"</b>defines a password field</p>
+    <form action="./action.js">
+        <label for="uname">Username: </label> <br>
+        <input type="text" id="uname" name="uname" placeholder="enter user name here"> <br>
+        <label for="pwd">Password: </label> <br>
+        <input type="password" id="pwd" name="pwd"> <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <h1>submit button</h1>
+    <form action="./action.js">
+        <label for="fname">First name: </label> <br>
+        <input type="text" placeholder="enter first name here"> <br>
+        <label for="lname">Last name: </label> <br>
+        <input type="text" placeholder="enter last name here"> <br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <hr>
+    <h1>reset button</h1>
+    <form action="./action.js">
+        <label for="fname">First name: </label> <br>
+        <input type="text" placeholder="enter first name here"> <br>
+        <label for="lname">Last name: </label> <br>
+        <input type="text" placeholder="enter last name here"> <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+    <h1>input type radio</h1>
+    <form action="./action.js">
+        <input type="radio" id="male">
+        <label for="male">Male</label> <br>
+        <input type="radio" id="female">
+        <label for="female">Female</label> <br>
+        <input type="radio" id="other">
+        <label for="other">Other</label> <br>
+        <button type="reset">RESET</button>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <hr>
+    <h1>checkboxes</h1>
+    <form action="./action.js">
+        <input type="checkbox" id="bike">
+        <label for="bike">Bike</label> <br>
+        <input type="checkbox" id="car">
+        <label for="car">Car</label> <br>
+        <input type="checkbox" id="boat">
+        <label for="boat">Boat</label> <br>
+        <button type="reset">RESET</button>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <hr>
+    <h1>input type button</h1>
+    <button type="button" onclick="alert('Hello world')">Click me!</button>
+
+    <hr>
+    <h1>show a color picker</h1>
+    <form action="./action.js">
+        <label for="color">Select your favorite color: </label>
+        <input type="color" id="color">
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+    </form>
+
+    <hr>
+    <h1>date field</h1>
+    <form action="./action.js">
+        <label for="bday">Birthday: </label>
+        <input type="date" id="bdate">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+
+    </form>
+
+    <hr>
+    <h1>date field restritions</h1>
+    <form action="./action.js">
+        <label for="dateb">Enter a date before 1980-01-01: </label>
+        <input type="date" max="1980-01-01"> <br>
+        <label for="datea">Enter a date after 2000-01-01: </label>
+        <input type="date" min="2000-01-01"> <br>
+        <label for="fdate">Enter date from 1980-01-01 to 2000-01-01: </label>
+        <input type="date" min="1980-01-01" max="2000-01-01"> <br>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>local date field</h1>
+    <form action="./action.js">
+        <label for="bday">Birthday (date and time): </label>
+        <input type="datetime-local" id="bday" min="1980-01-01">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>email field</h1>
+    <form action="./action.js">
+        <label for="email">Enter email here: </label>
+        <input type="email" id="email" placeholder="email">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>month field</h1>
+    <form action="./action.js">
+        <label for="bday">Birthday (month and year): </label>
+        <input type="month" name="bday" id="bday" min="1980-01-01" placeholder="hehe">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>number field</h1>
+    <form action="./action.js">
+        <label for="number">Quantity(number between 1 and 5): </label>
+        <input type="number" placeholder="number" min="1" max="5">
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>range field</h1>
+    <form action="./action.js">
+        <label for="range">Volume (between 0 and 50): </label>
+        <input type="range" min="25" max="150">
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>search field</h1>
+    <form action="./action.js">
+        <label for="sg">Search google: </label>
+        <input type="search">
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>telephone field</h1>
+    <form action="./action.js">
+        <label for="number">Enter a phone number here: </label> <br>
+        <input type="tel" id="number" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+        <small>format: 123-45-678</small> <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <hr>
+    <h1>show a time input control</h1>
+    <form action="./action.js">
+        <label for="time">Select a time: </label>
+        <input type="time" id="time"> 
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <hr>
+    <h1>display a URL input field</h1>
+    <form action="./action.js">
+        <label for="url">Add your homepage: </label>
+        <input type="url" id="url">
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <hr>
+    <h1>display a week input control</h1>
+    <form action="./action.js">
+        <label for="week">Select a week: </label>
+        <input type="week">
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+    <h1>input value attribute</h1>
+
+    <hr>
+    <h1>my first javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date and time.</button>
+    <p id="demo"></p>
+
+    <hr>
+    <h1>use javascript to change text</h1>
+    <p>this sample writes "hello javascript" into an html element with id="demo"</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello javascript";
+    </script>
+
+    <hr>
+    <h1>click this button for display date and time</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Clickme</button>
+    <p id="demo"></p>
+
+    <hr>
+    <h1>my first javascript</h1>
+    <p>javascript can change the content of an html element</p>
+    <p>after click the button, the content of p with id = "demo" will set to "hello world"</p>
+    <button type="button" onclick="myFunction()">CLickme</button>
+    <p id="demo">this is first paragraph</p>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "hello world";
+        }
+    </script>
+
+    <hr>
+    <h1>javascript change style of html element</h1>
+    <p id="demo">the first paragraph</p>
+    <button type="button" onclick="myFunction()">Click me</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").style.fontSize = "25px";
+            document.getElementById("demo").style.color = "blue";
+            document.getElementById("demo").style.backgroundColor = "red";
+        }
+    </script>
+
+    <hr>
+    <h1>javascript can change attribute of image</h1>
+    <img id="img" src="./resource/img/hanoi1.jpg" alt="error">
+    <button type="button" onclick="myImg(1)">hanoi1</button>
+    <button type="button" onclick="myImg(2)">hanoi2</button>
+    <script>
+        function myImg(number) {
+            var image;
+            if (number == 1) {
+                image = "./resource/img/hanoi1.jpg";
+            } else {
+                image = "./resource/img/hanoi2.jpg";
+            }
+            document.getElementById("img").src = image;
+        }
+    </script>
+</body>
+</html>
