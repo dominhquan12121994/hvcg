@@ -1,0 +1,15 @@
+.car {
+    list-style: disc;
+}
+
+.name {
+    list-style: circle;
+}
+
+.animal {
+    list-style: square;
+}
+
+.title {
+    list-style: none;
+}

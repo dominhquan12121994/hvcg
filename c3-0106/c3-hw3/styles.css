@@ -4,6 +4,10 @@
     text-align: right;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 .second {
     color: red;
     background-color: #fbb;
