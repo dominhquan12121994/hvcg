@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    width: 500px;
+    border-color: rgb(128, 41, 128);
+}
+
+body {
+    background-color: #ffedca;
+}
+
+img {
+    float: left;
+}
+
+h1 {
+    color: #c60;
+    text-align: center;
+}
+
+th {
+    background-color: #c60;
+    color: #fff;
+}
+
+.white {
+    background-color: white;
+}

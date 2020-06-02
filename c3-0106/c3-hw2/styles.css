@@ -1,0 +1,24 @@
+table {
+    /* border: 1px solid red; */
+    border-collapse: collapse;
+    font-family: tahoma;
+    font-size: 12px;
+    border-color: tomato;
+}
+
+h1 {
+    color: #c03;
+}
+
+.title {
+    color: #fff;
+    background-color: #c03;
+}
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}

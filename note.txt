@@ -22,3 +22,8 @@ LESSON 3
 - th in dam, can giua dung cho tr dau tien trong table
 - colspan: merge cac o trong bang table
 - bai 8, 9, 10git 
+- don vi trong html luon la pixel va ko dung px
+- icon: font-awesome
+- link font aewsome:
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">

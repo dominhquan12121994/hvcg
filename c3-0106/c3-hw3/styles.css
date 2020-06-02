@@ -1,0 +1,16 @@
+.first {
+    color: white;
+    background-color: #f00;
+    text-align: right;
+}
+
+.second {
+    color: red;
+    background-color: #fbb;
+    text-align: center;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
