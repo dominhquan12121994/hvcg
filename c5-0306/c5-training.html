@@ -1,0 +1,82 @@
+<!-- text, radio, select - option, size attribute -->
+<!-- text area, field, legend, label, button -->
+<!-- datalist, password, checkbox, color, date, email -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5</title>
+</head>
+<body>
+    <form action="./action.js">
+        <label for="fname">First name: </label> <br>
+        <input type="text" id="fname" name="fname" value="John"> <br>
+        <label for="lname">Last name: </label> <br>
+        <input type="text" id="lname" name="lname" value="Doe"> <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <form action="./action.js">
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label> <br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label> <br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label> <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <form action="./action.js">
+        <select name="cars" id="cars">
+            <option value="volvo">VOLVO</option>
+            <option value="saab">SAAB</option>
+            <option value="audi" selected>AUDI</option>
+            <option value="fiat">FIAT</option>
+        </select>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <form action="./action.js">
+        <select name="cars" id="cars" size="3">
+            <option value="volvo">VOLVO</option>
+            <option value="saab">SAAB</option>
+            <option value="audi">AUDI</option>
+            <option value="fiat">FIAT</option>
+        </select>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <form action="./action.js">
+        <textarea name="note" id="note" cols="20" rows="10" placeholder="text here"></textarea> <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <fieldset>
+        <form action="./action.js">
+            <legend>PERSONAL</legend>
+            <label for="name">Name: </label> <input type="text" id="name" name="name">
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd"> <br>
+            <button type="submit">SUBMIT</button> <br>
+        </form>
+    </fieldset>
+    <hr>
+    <form action="./action.js">
+        <input type="checkbox" id="car" name="verhicle">
+        <label for="car">I have a car</label> <br>
+        <input type="checkbox" id="bike" name="verhicle">
+        <label for="bike">I have a bike</label> <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <hr>
+    <input type="color" id="color" name="color" value="#ff33cc">
+    <label for="color">Pick color: </label>
+    <hr>
+    <input type="date" id="bday" name="bday">
+    <label for="bday">Birthday</label>
+    <hr>
+    <input type="email" id="gmail" name="gmail">
+    <label for="gmail">Gmail: </label>
+</body>
+</html>

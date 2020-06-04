@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5 - Homework 1</title>
+    <style>
+        .table01 {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        .table02 {
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            width: 600px;
+            background-color: aquamarine;
+        }
+
+        .center {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Đăng nhập</h1>
+        <form action="./action.js">
+            <table class="table01" border="1">
+                <tr>
+                    <td>Mã người dùng: </td>
+                    <td>
+                        <input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu: </td>
+                    <td>
+                        <input type="password" id="pwd" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="center" type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form action="./action.js">
+            <table class="table02" border="1">
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text" id="fullname" name="fullname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input type="text" id="address" name="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input type="tel" id="tel" name="tel" pattern="[0-9]{10}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Nam</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+                        <select name="job" id="job">
+                            <option value="doctor">Bác sĩ</option>
+                            <option value="engineer">Kỹ sư</option>
+                            <option value="teacher" selected>Giáo viên</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+                        <select name="product" id="product" multiple>
+                            <option value="kemdanhrang">Kem đánh răng</option>
+                            <option value="botgiat">Bột giặt</option>
+                            <option value="daugoi">Dầu gội đầu</option>
+                            <option value="suatam">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2">Bạn đã đăng ký thành công!!!</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
