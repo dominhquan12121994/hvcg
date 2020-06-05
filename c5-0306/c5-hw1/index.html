@@ -9,6 +9,7 @@
         .table01 {
             width: 300px;
             border-collapse: collapse;
+            background-color: aquamarine;
         }
 
         .table02 {
@@ -19,7 +20,6 @@
         }
 
         .center {
-            margin: auto;
             text-align: center;
         }
     </style>
@@ -43,8 +43,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        <button id="center" type="submit">Đồng ý</button>
+                    <td class="center" colspan="2">
+                        <button type="submit">Đồng ý</button>
                     </td>
                 </tr>
             </table>
@@ -96,11 +96,13 @@
                 <tr>
                     <td>Chọn sản phẩm tham gia</td>
                     <td>
-                        <select name="product" id="product" multiple>
+                        <select name="product" id="product" size="4" multiple>
                             <option value="kemdanhrang">Kem đánh răng</option>
                             <option value="botgiat">Bột giặt</option>
                             <option value="daugoi">Dầu gội đầu</option>
                             <option value="suatam">Sữa tắm</option>
+                            <option value="banchai">Ban chai</option>
+                            <option value="caylaunha">Cay lau nha</option>
                         </select>
                     </td>
                 </tr>
@@ -109,12 +111,12 @@
                     <td><input type="number"></td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td class="center" colspan="2">
                         <button type="submit">Đồng ý</button>
                     </td>
                 </tr>
-                <tr>
-                    <td class="center" colspan="2">Bạn đã đăng ký thành công!!!</td>
+                <tr class="center">
+                    <td colspan="2">Bạn đã đăng ký thành công!!!</td>
                 </tr>
             </table>
         </form>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 6</title>
+</head>
+<body>
+    <form>
+        <label for="bdaymonth">Birthday (month and year): </label>
+        <input type="month" id="bdaymonth" name="bdaymonth"> <br>
+        <input type="number" id="num" name="num" min="0" max="500" step="20"> <br>
+        <input type="text" value="john" readonly> <br>
+        <input type="text" value="john" disabled> <br>
+        <input type="text" value="doe"> <br>
+        <input type="text" size="30"> <br>
+        <input type="text" style="width: 500px;"> <br>
+        <input type="text" maxlength="50" size="50" placeholder="please text here"> <br>
+        <!-- nen dung style luon trong the input -->
+        <!-- span vs label: span ko nhay den for, label se nhay den for -->
+        <!-- <input type="text" required> <br> -->
+        <input type="text" pattern="[a-z]{4,6}"> <br>
+        <input type="text" pattern="[0-9]{5}"> <br>
+        <!-- button: ko gui server, submit: gui server -->
+        <!-- action trong form: gui d  -->
+
+
+
+        <input type="submit" value="SUBMIT"> 
+    </form>
+    <hr>
+    <video src="../mov_bbb.mp4" width="500" controls></video>
+    <video width="300" controls>
+        <source src="/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <!-- phai dung source co type -->
+    <hr>
+    <audio controls>
+        <source src="/Yiruma Maybe.mp3">
+    </audio>
+</body>
+</html>
