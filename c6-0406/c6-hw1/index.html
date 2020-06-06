@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: rgb(250, 232, 208);
+            width: 500px;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        fieldset {
+            border: 1px solid rgb(190, 17, 17);
+        }
+
+        p {
+            color: rgb(255, 166, 0);
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .normal {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 class="blue center">Đăng ký du lịch</h1>
+        <table border="1">
+            <tr>
+                <td class="blue">Họ và tên</td>
+                <td>
+                    <input type="text" id="fname" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Địa chỉ</td>
+                <td>
+                    <input type="text" id="address" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Điện thoại</td>
+                <td>
+                    <input type="tel" id="phone" pattern="[0-9]7">
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Khách Việt Nam</td>
+                <td>
+                    <input type="checkbox" id="nation">
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Chọn tour</td>
+                <td>
+                    <select name="tour" id="tour">
+                        <optgroup class="italic" label="Miền Bắc">
+                            <option class="normal" value="hhs">Hà Nội - Hạ Long - Sapa</option>
+                            <option class="normal" value="hcn">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option class="normal" value="hcc">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup class="italic" label="Miền Trung">
+                            <option class="normal" value="hbd">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option class="normal" value="nd">Nha Trang - Đà Lạt</option>
+                            <option class="normal" value="bgk" selected>Buôn Mê Thuột - Gia Lai - Kon Tum</option>
+                        </optgroup>
+                        <optgroup class="italic" label="Miền Nam">
+                            <option class="normal" value="tcc">TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option class="normal" value="nd">TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Phương tiện</td>
+                <td>
+                    <input type="radio" id="plane" name="verhicle">
+                    <label for="plane" class="blue">Máy bay</label>
+                    <input type="radio" id="car" name="verhicle">
+                    <label for="car" class="blue">Xe ô tô</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend class="italic">Số lượng đoàn khách</legend>
+                        <label for="adult" class="blue">Người lớn</label>
+                        <input type="number" id="adult" min="0" max="100">
+                        <label for="kid" class="blue">Trẻ em</label>
+                        <input type="number" id="kid" min="0" max="100">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td class="blue">Ghi chú thêm</td>
+                <td>
+                    <select name="anote" size="2" id="anote" multiple>
+                        <option value="note1">Có 2 trẻ em dưới 6 tuổi</option>
+                        <option value="note2">Có 2 người ăn chay</option>
+                        <option value="note3">Có 3 người đau chân</option>
+                        <option value="note4">Có 2 người đau tay</option>
+                        <option value="note5">Có 1 người đón riêng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="center">
+                <td colspan="2">
+                    <button type="submit">Đồng ý</button>
+                </td>
+            </tr>
+            <tr class="center">
+                <td colspan="2">
+                    <p>Bạn đã đăng ký thành công!!!</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
