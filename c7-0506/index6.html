@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web layout</title>
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1000px;
+        }
+        
+        .header {
+            width: 100%;
+            background-color: rgb(102, 99, 89);
+            height: 100px;
+        }
+
+        .main-nav {
+            width: 20%;
+            height: 200px;
+            background-color: rgba(255, 192, 203, 0.671);
+            float: left;
+        }
+
+        .main {
+            width: 80%;
+            height: 200px;
+            background-color: rgba(176, 224, 230, 0.589);
+            float: right;
+            padding: 20px 20px;
+        }
+
+        .clearfix:after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: rosybrown;
+        }
+
+        .nav {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav-item {
+            background-color: teal;
+            list-style: none;
+            margin: 10px 20px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Chania</p>
+        </div>
+        <div>
+            <div class="main-nav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#">The Flight</a></li>
+                    <li class="nav-item"><a href="#">The City</a></li>
+                    <li class="nav-item"><a href="#">The Island</a></li>
+                    <li class="nav-item"><a href="#">The Food</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1>THE CITY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque alias, maxime accusamus inventore molestiae, impedit dicta unde ipsa ratione non voluptatibus numquam, incidunt labore veritatis ad natus! Nesciunt, numquam debitis explicabo corrupti vitae quidem blanditiis quisquam expedita facilis nam iusto atque at non sint voluptate, nobis voluptatem ducimus iure eius!</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="footer">
+            <p>Footer text</p>
+        </div>
+    </div>
+</body>
+</html>

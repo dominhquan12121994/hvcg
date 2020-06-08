@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0px auto;
+        }
+
+        .clearfix:after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+        div {
+            border: 1px solid blue;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .image {
+            position: relative;
+            width: 30%;
+            height: 400px;
+            float: left;
+            margin: auto;
+        }
+
+        img {
+            border: 1px solid blue;
+            /* display: block; */
+            /* margin: auto; */
+            /* padding: 170px 0px; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* cach can giua anh bang absolute va transform */
+        }
+
+        .intro {
+            padding-left: 20px;
+            width: 70%;
+            height: 200px;
+            float: right;
+        }
+
+        .contact {
+            position: relative;
+            padding-left: 20px;
+            width: 70%;
+            height: 200px;
+            float: right;
+        }
+
+        a {
+            position: absolute;
+            border: 1px solid blue;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Cong ty Hoa tuoi Nhan Ai</h1>
+        </div>
+        <div class="image">
+            <img src="/background.jpg" alt="error" width="100px">
+        </div>
+        <div class="intro">
+            <h3>1. Gioi thieu</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>2. Lien he</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            </ul>
+            <a href="#">trung tam tin hoc</a>
+        </div>
+    </div>
+</body>
+</html>

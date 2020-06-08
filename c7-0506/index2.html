@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            margin: 0px auto;
+            width: 500px;
+        }
+
+        .header {
+            background-color: green;
+            height: 100px;
+        }
+
+        .main {
+            background-color: rgba(172, 255, 47, 0.219);
+            width: 50%;
+            height: 300px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .aside {
+            background-color: rgba(255, 105, 180, 0.425);
+            width: 30%;
+            height: 300px;
+            float: right;
+        }
+
+        .aside2 {
+            background-color: khaki;
+            width: 20%;
+            height: 300px;
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .footer {
+            background-color: indianred;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <p>kdsfj</p> -->
+        </div>
+        <div>
+            <div class="main">
+                <!-- <p>dksak</p> -->
+            </div>
+            <div class="aside"></div>
+            <div class="aside2"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer"></div>
+    </div>
+    <div style="border: 5px solid blue;overflow: auto;">
+        <img style="border: 5px solid rgba(255, 0, 0, 0.295);float: left;" src="/background.jpg" alt="" width="200px" height="200px">
+        <p style="display: inline-block;border: 10px solid black;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, aliquid?</p>
+    </div>
+</body>
+
+</html>
