@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 400px;
+            height: 300px;
+            padding: 30px;
+            border: 1px solid yellow;
+        }
+
+        .div1, .div2, .div3 {
+            margin: 10px;
+        }
+
+        .div1 {
+            border: 1px solid red;
+            position: relative;
+            /* static: ko di chuyen so voi vi tri ban dau cua element */
+            /* relative: tuong doi, so voi vi tri ban dau cua element */
+            /* absolute: tuyet doi, so voi vi tri cua the cha */
+            /* fixed: vi tri co dinh, so voi cua so trinh duyet */
+            top: 0px;
+            left: 100px;
+        }
+
+        .div2 {
+            border: 1px solid blue;
+        }
+
+        .div3 {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+</body>
+</html>

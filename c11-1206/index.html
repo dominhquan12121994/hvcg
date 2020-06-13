@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 1px solid yellow;
+        }
+
+        .div1 {
+            border: 1px solid red;
+            position: absolute;
+            /* static: ko di chuyen so voi vi tri ban dau cua element */
+            /* relative: tuong doi, chi bao quanh content nen ko set duoc right va bottom so voi vi tri ban dau cua element */
+            /* absolute: tuyet doi, co the tao khoi, so voi vi tri cua the cha */
+            /* fixed: vi tri co dinh, co the tao khoi, so voi cua so trinh duyet */
+            top: 10px;
+            bottom: 30px;
+            left: 50px;
+            right: 100px;
+        }
+
+        .div2 {
+            border: 1px solid blue;
+            position: fixed;
+            top: 100px;
+            bottom: 20px;
+            right: 0px;
+            left: 1000px;
+        }
+
+        .div3 {
+            border: 1px solid green;
+        }
+
+        .div4 {
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid red;
+            overflow: scroll;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .div5 {
+            margin: 0 auto;
+            width: 40%;
+            border: 1px solid red;
+        }
+
+        .image {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .div6 {
+            border: 1px solid red;
+            width: 40%;
+            padding: 100px 0px;
+            /* line-height: 200px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+    <hr>
+    <div class="clearfix"></div>
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt sint modi dicta ratione commodi
+            incidunt eius veritatis enim numquam? Omnis necessitatibus fugit est explicabo cum consequuntur assumenda id
+            molestiae quibusdam vitae sequi iure incidunt ratione accusamus, a laboriosam ab debitis rerum possimus et?
+            Nobis dolorum fugiat aliquid soluta ullam?</p>
+    </div>
+    <hr>
+    <div class="div5">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, nisi.</p>
+    </div>
+    <hr>
+    <img class="image" src="../background.jpg" alt="">
+    <hr>
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro nobis obcaecati accusamus sunt ipsum eum explicabo, voluptates enim illum.</p>
+    </div>
+</body>
+
+</html>

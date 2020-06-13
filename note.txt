@@ -29,3 +29,5 @@ LESSON 3
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 - ctrl + shift + arrow
 - q to exit git log
+- dung padding cho the cha
+- xu huong dung overflow: auto???

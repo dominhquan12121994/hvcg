@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-bottom: 15%;
+        }
+        div p {
+            /* quan he cha con: tat ca cac the p co trong div ke ca la con, chau, chat... */
+            /* color: red; */
+        }
+
+        div > p {
+            color: chartreuse;
+        }
+
+        div + p {
+            color: red;
+        }
+
+        div ~ p {
+            color: violet;
+        }
+
+        .otherdiv::before {
+            content: "this is before - ";
+            color: red;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+
+        .otherdiv::after {
+            content: " - this is after";
+            color: blue;
+            font-size: 100px;
+            text-transform: capitalize;
+        }
+
+        li:first-child {
+            color: red;
+            background-color: yellowgreen;
+        }
+
+        li:last-child {
+            color: blue;
+            background-color: violet;
+        }
+
+        li:nth-child(3) {
+            color: green;
+            background-color: khaki;
+        }
+
+        .image {
+            transition: 0.5s;
+        }
+
+        .image:hover {
+            opacity: 0.5;
+        }
+
+        .div1 {
+            margin: 100px;
+            padding: 50px;
+            background-size: 100px;
+            background-image: url("../background.jpg");
+        }
+
+        .div2 {
+            margin: 100px;
+            padding: 20px;
+            background-color: white;
+            opacity: 0.6;
+        }
+
+        .text {
+            color: black;
+            font-size: 50px;
+            text-align: center;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>day la the truoc div</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <section>
+                <p>the con tiep ne</p>
+            </section>
+        </section>
+    </div>
+    <p>day la the ngay sau div</p>
+    <code>this is some code</code> <br>
+    <span>this is span tag</span> <br>
+    <i>this is italic text</i>
+    <p>day la the thu 2 sau div</p>
+    <p>day la the thu 3 sau div</p>
+    <hr>
+    <div class="otherdiv">this is div</div>
+    <hr>
+    <ul>
+        <li>this is li1</li>
+        <li>this is li2</li>
+        <li>this is li3</li>
+        <li>this is li4</li>
+    </ul>
+    <hr>
+    <img class="image" src="../background.jpg" alt="">
+    <hr>
+    <div class="div1">
+        <div class="div2">
+            <p class="text">this is text</p>
+        </div>
+    </div>
+</body>
+</html>
