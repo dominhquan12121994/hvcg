@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         .info {
             width: 20%;
             margin: 5% auto;
@@ -18,36 +21,41 @@
             border-radius: 5px;
             border: 1px solid black;
             padding: 7px;
-            width: 90%;
+        }
+
+        input {
+            width: 100%;
         }
 
         select {
-            width: 95%;
+            width: 100%;
         }
 
         button {
             margin-top: 20px;
-            width: 95%;
+            width: 100%;
             background-color: green;
             color: white;
+        }
+
+        .fname, .lname {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="info">
-        <form action="">
-            <label for="fname">First Name</label> <br>
-            <input type="text" placeholder="Your name..." name="fname"> <br>
-            <label for="lname">Last Name</label> <br>
-            <input type="text" placeholder="Your last name..." name="fname"> <br>
-            <label for="country">Country</label> <br>
-            <select name="country" id="">
+        <form class="info">
+            <label for="fname">First Name</label>
+            <input class="fname" type="text" placeholder="Your name..." name="fname">
+            <label for="lname">Last Name</label>
+            <input class="lname" type="text" placeholder="Your last name..." name="fname">
+            <label for="country">Country</label>
+            <select class="country" name="country" id="country">
                 <option value="australia">Australia</option>
                 <option value="america">America</option>
                 <option value="vietnam">Vietnam</option>
             </select>
             <button type="submit">Try It Yourself >></button>
         </form>
-    </div>
 </body>
 </html>

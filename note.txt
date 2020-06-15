@@ -31,3 +31,12 @@ LESSON 3
 - q to exit git log
 - dung padding cho the cha
 - xu huong dung overflow: auto???
+- luon nho box-sizing: border-box;
+- set css ban dau cho file html
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
