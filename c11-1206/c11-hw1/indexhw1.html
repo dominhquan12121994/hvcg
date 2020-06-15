@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .div1 {
+            position: relative;
+            width: 50%;
+            height: 400px;
+            margin: 10% auto;
+        }
+
+        .div2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 20px;
+            left: 20px;
+        }
+
+        .div3 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .div4 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .img {
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 20px;
+            top: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+    <img class="img" src="/background.jpg" alt="error">
+    <div class="div4"></div>
+</body>
+
+</html>

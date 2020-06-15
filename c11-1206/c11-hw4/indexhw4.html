@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 10%;
+            background-color: #eee;
+            padding: 15px;
+        }
+
+        li:first-child {
+            background-color: green;
+        }
+        
+        .first ~ li:hover {
+            background-color: #333;
+        }
+
+        .first ~ li:hover .link{
+            background-color: #333;
+            color: white;
+        }
+
+        .first:hover .firstlink{
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first"><a class="firstlink" href="#">Home</a></li>
+        <li><a class="link" href="#">News</a></li>
+        <li><a class="link" href="#">Contact</a></li>
+        <li><a class="link" href="#">About</a></li>
+    </ul>
+</body>
+</html>
