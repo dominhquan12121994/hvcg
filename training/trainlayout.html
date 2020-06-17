@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        * {
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+        }
+
+        .div {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .div1, .div2, .div3 {
+            width: 33.33%;
+            float: left;
+        }
+
+        @media screen and (max-width: 400px) {
+            .div1, .div2, .div3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div1">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla blanditiis inventore fugiat beatae pariatur exercitationem, temporibus dolor aperiam nobis magni. Fuga, facilis doloremque ab, ipsam quaerat libero error quisquam et assumenda necessitatibus, est iusto vel dolor odit reprehenderit! Porro nulla cum natus autem laudantium delectus vitae soluta dicta animi nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis consequatur dolore harum deleniti eligendi vero nihil eos culpa optio!</p>
+        </div>
+        <div class="div2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis consequatur dolore harum deleniti eligendi vero nihil eos culpa optio Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, voluptatum. Provident, repellendus doloremque illo labore rem, accusamus animi consectetur totam quisquam nostrum esse dolorem obcaecati libero doloribus nihil itaque blanditiis, non quibusdam expedita et voluptatem neque dolores veritatis. Iusto natus voluptatibus aspernatur nobis aperiam omnis doloremque molestiae voluptates, quisquam quas! !</p>
+        </div>
+        <div class="div3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis consequatur dolore harum deleniti eligendi vero Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repellat ducimus laudantium eveniet. Autem error optio qui reiciendis ut quas ea quaerat ullam repellat voluptatibus, a totam, sapiente fugiat ipsam perspiciatis fuga sed iste aperiam facere provident sunt? Expedita dicta consectetur consequatur sit voluptatem quos repellat perspiciatis inventore corporis officia? nihil eos culpa optio!</p>
+        </div>
+    </div>
+</body>
+</html>

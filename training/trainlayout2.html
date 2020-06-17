@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            margin: 2% auto;
+            width: 100%;
+            overflow: auto;
+        }
+
+        .side1, .side2 {
+            width: 25%;
+            float: left;
+        }
+
+        .main {
+            width: 50%;
+            float: left;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main, .side1, .side2 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="side1">
+            <h1>this is side 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium pariatur, tempore possimus praesentium sequi nam consequatur nobis temporibus facilis.</p>
+        </div>
+        <div class="main">
+            <h1>this is main content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium pariatur, tempore possimus praesentium sequi nam consequatur nobis temporibus facilis.</p>
+        </div>
+        <div class="side2">
+            <h1>this is side 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium pariatur, tempore possimus praesentium sequi nam consequatur nobis temporibus facilis.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            counter-reset: section;
+            list-style: none;
+        }
+
+        li:before {
+            counter-increment: section;
+            content: counters(section,".") " ";
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>item1
+            <ol>
+                <li>item1.1</li>
+                <li>item1.2
+                    <ol>
+                        <li>item 1.2.1</li>
+                        <li>item 1.2.2</li>
+                    </ol>
+                </li>
+                <li>item1.3</li>
+            </ol>
+        </li>
+        <li>item2
+            <ol>
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+                <li>item 2.3</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>

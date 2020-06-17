@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            position: relative;
+            margin: 100px;
+            padding: 20px;
+            width: 200px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .span:after {
+            position: absolute;
+            content: " >>";
+            opacity: 0;
+            right: -20px;
+        }
+
+        .btn:hover .span:after{
+            opacity: 1;
+            right: 0px;
+        }
+
+        .btn:hover .span {
+            padding-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" type="button"><span class="span">HOVER</span></button>
+</body>
+</html>

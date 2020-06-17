@@ -33,6 +33,9 @@ LESSON 3
 - xu huong dung overflow: auto???
 - luon nho box-sizing: border-box;
 - set css ban dau cho file html
+:root {
+    font-size: 62.5%;
+}
 body {
     margin: 0px;
 }
@@ -40,3 +43,41 @@ body {
 * {
     box-sizing: border-box;
 }
+- tai sao khi viet @media screen and (max-width: 600px) {} thi luon bi responsive luc 750px
+- quy tac chia cot trong responsive
+1. dien thoai: 1 cot
+2. tablet: 2 cot
+3. laptop, pc: 3 cot
+- nguyen tac responsive: gom cot chia tu trai qua phai
+- rem: relative of root element: vi vay luon dung rem va set root 62.5%, khi do 10px = 1rem, n rem = n*10 px;
+- set rem trong root pseudo class :root {}, day la uu tien cao nhat trong file html
+- pseudo class gom :hover, :active, :visited,...
+- pseudo element gom :first-child, :before, :after,...
+- css specificity: thu tu uu tien trong css: co nghia la thuoc tinh css nao se duoc ap dung: inline; id; class, attribute, pseudo-class; element, pseudo-element
+    inline: style="color:red;"  \\\ 1000 points
+    id: #id {color:black;}      \\\ 100 points
+    class: .class {color:white;} \\\ 10 points
+    attribute: [id=something] ---- div[id=div1] \\\ 10 points
+    pseudo-class: :hover, :active \\\ 10 points
+    element: h1, p, h2             \\\ 1 points
+    pseudo-element: :before, :after   \\\ 1 points
+    *, body, inherit:                   \\\ 0 points
+- neu bang diem uu tien thuoc tinh moi nhat (code sau cung)
+- div#a > div[id=a] : equal 101 points
+- bang diem internal > external
+- background-image: 1, 2, 3: 1 de 2 de 3
+- background-position: a, b, c: a ap dung cho 1, b ap dung cho 2, c ap dung cho 3
+- background-repeat: no-repeat, repeat;
+- background shorthand: background: 1 a repeat, 2 b no-repeat;
+- animation use @keyframes abc {
+    from {
+
+    }
+    to {
+        
+    }
+}
+- z-index phai di cung position absolute
+- khi lam responsive nho dua margin, padding ve 0px
+- can rat luu y cac thuoc tinh cua display: inline, inline-block, block, flex
+- uu tien su dung flex cho the cha de de chia div

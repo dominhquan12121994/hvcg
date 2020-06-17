@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex trum` css */
+            background-color: lightblue;
+            flex-direction: row-reverse;
+            /* doi chieu: gom row va column */
+            justify-content: center;
+            /* de cac cot o giua */
+        }
+
+        .div1, .div2, .div3 {
+            /* width: 100px; */
+            width: 20%;
+            /* flex tu dong chia deu` neu de theo hang*/
+            height: 100px;
+            background-color: blue;
+            border: 5px solid violet;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                background-color: red;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .container {
+                background-color: orange;
+                /* media yeu cau chinh xac tung dau cach */
+                /* voi @media luon viet max-width tu to den be: vi css doc tu tren xuong duoi */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>

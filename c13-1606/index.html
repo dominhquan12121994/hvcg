@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            background-color: green;
+            width: 150px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: auto;
+        }
+
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: change;
+            animation-duration: 4s;
+        }
+
+        .ani1 {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-name: other;
+            animation-duration: 4s;
+            position: relative;
+        }
+
+        .animation {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-name: change;
+            animation-duration: 4s;
+        }
+
+        @keyframes change {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes other {
+            0% {background-color: red; top: 0px; left: 0px;}
+            25% {background-color: yellow; top: 0px; left: 200px;}
+            50% {background-color: blue; top: 200px; left: 200px;}
+            75% {background-color: blue; top: 200px; left: 0px;}
+            100% {background-color: green; top: 0px; left: 0px;}
+        }
+
+        .oto {
+            width: 50px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+        }
+
+        @keyframes move {
+            0% {left: 0%;}
+            50% {left: 80%;}
+            100% {left: 0%;}
+        }
+
+        .div1 {
+            width: 300px;
+            width: 100px;
+            border: 1px solid blue;
+        }
+
+        .div2 {
+            width: 300px;
+            width: 100px;
+            border: 1px solid red;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>mouse over me</span>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="#">google</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">zalo</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="animation"></div>
+    <hr>
+    <div class="ani1"></div>
+    <hr>
+    <img class="oto" src="./oto.jpg" alt="error">
+    <hr>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deleniti?</p>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio porro aperiam nihil vel saepe iste.</p>
+    </div>
+</body>
+</html>
