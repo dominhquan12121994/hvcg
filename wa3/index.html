@@ -163,13 +163,13 @@
         }
 
         /* 4e. end of value section */
-
+            
         @media screen and (max-width: 992px) {
-
             /* 1.navigation menu */
             .navigation {
                 background-color: #333;
                 overflow: auto;
+                padding-right: 4%;
             }
 
             .menulink {
@@ -186,16 +186,33 @@
             }
 
             .content {
-                margin-top: 4%;
-                padding: 2% 5%;
+                width: 90%;
+                margin: 0 auto;
+                padding: 30px 0px;
+            }
+
+            .content1, .content2 {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .divhr {
+                width: 96%;
+                margin-left: 2%;
+                margin-top: 3%;
+                border-bottom: 2px solid #ccc;
             }
 
             /* 2e. end of background section */
             /* ------------------------------- */
             /* 3. guide section */
-            .hrline {
-                display: block;
-                margin-bottom: 30px;
+            .neighborhood {
+                margin-top: 30px;
+            }
+
+            .neighborhood, .para {
+                padding-left: 2%;
+                padding-right: 2%;
             }
 
             .div1,
@@ -243,8 +260,65 @@
         }
 
         @media screen and (max-width: 768px) {
+            /* 1. navigation section */
+            /* .navigation {
+                display: flex;
+                justify-content: center;
+                center cac doi tuong trong cac the con
+            } */
 
+            /* .unorderlist {
+                margin: 0px auto;
+                padding: 0px;
+            } */
+
+            .navigation {
+                padding-right: 0px;
+            }
+
+            .unorderlist {
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                overflow: auto;
+            }
+
+            .list-item {
+                float: left;
+                width: 20%;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                text-align: center;
+            }
+
+            .right, .left {
+                float: none;
+            }
+
+            /* .list-item {
+                display: inline-block;
+                float: none;
+            } */
+            /* 1e. end of navigation section */
+            /* -------------------------- */
+            /* 2. background section */
+            .content {
+                border-bottom: none;
+            }
+
+            .content1, .content2 {
+                padding-left: 2%;
+            }
+
+            /* 2e. end of background section */
             /* 3. guide section */
+            .neighborhood, .para {
+                padding-left: 2%;
+            }
+
             .div1,
             .div2 {
                 display: block;
@@ -259,8 +333,17 @@
                 margin: 0px;
                 padding: 5% 2%;
             }
-
             /* 3e. end of guide section */
+        }
+
+        @media screen and (max-width: 560px) {
+            .menulink {
+                padding: 25px 10px;
+            }
+
+            .content1 {
+                font-size: 40px;
+            }
         }
     </style>
 </head>
@@ -269,11 +352,11 @@
     <!-- 1. navigation menu -->
     <nav class="navigation">
         <ul class="unorderlist">
-            <li><a class="menulink left" href="#">Brand</a></li>
-            <li><a class="menulink left" href="#">Browse</a></li>
-            <li><a class="menulink right" href="#">Sign Up</a></li>
-            <li><a class="menulink right" href="#">Log In</a></li>
-            <li><a class="menulink right" href="#">Help</a></li>
+            <li class="list-item"><a class="menulink left" href="#">Brand</a></li>
+            <li class="list-item"><a class="menulink left" href="#">Browse</a></li>
+            <li class="list-item"><a class="menulink right" href="#">Sign Up</a></li>
+            <li class="list-item"><a class="menulink right" href="#">Log In</a></li>
+            <li class="list-item"><a class="menulink right" href="#">Help</a></li>
         </ul>
     </nav>
     <!-- 1e. end of navigation menu -->
@@ -284,15 +367,15 @@
         <div class="content">
             <h1 class="content1">Find a place to stay.</h1>
             <p class="content2">Rent from people in over 34,000 cities and 192 countries</p>
+            <div class="divhr"></div>
         </div>
     </div>
     <!-- 2e. end of background section -->
     <!-- ------------------------------ -->
     <!-- 3. guide section -->
     <div class="guide-section">
-        <hr class="hrline">
-        <h2>Neighborhood Guides</h2>
-        <p>Not sure where to stay? We've created neighborhood guides for cities around the world.</p>
+        <h2 class="neighborhood">Neighborhood Guides</h2>
+        <p class="para">Not sure where to stay? We've created neighborhood guides for cities around the world.</p>
         <div class="div0">
             <div class="div1">
                 <img class="mexico" src="./img/mexico.png" alt="mexico">

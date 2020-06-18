@@ -81,3 +81,55 @@ body {
 - khi lam responsive nho dua margin, padding ve 0px
 - can rat luu y cac thuoc tinh cua display: inline, inline-block, block, flex
 - uu tien su dung flex cho the cha de de chia div
+- khi lam layout nho set % cho tat ca cac div to co trong html
+- vi du: co cac div: navigation, background, guide section, value section:
+    tat ca cac div tren thong nhat tu ban dau la width 90%, margin 0 auto;
+    anh lui 2% -> tat ca cac noi dung phai de padding 2%
+    khi thong nhat duoc cac con so nay, cac thanh phan trong html se thang nhau
+    tu do tao ra giao dien responsive dung chuan
+    tat ca cac thanh phan quy ve %, tru phan navigation nav-item
+    muon de xuong kich thuoc nho hon, cach tot nhat la giam kich thuoc chu, phan tu?
+    chi set margin va padding cho left va right, phan top and bottom 
+- cac ten thuong dung
+    header-block header-logo header-logo__item
+    nav-block nav-bav nav__item
+    banner-block banner-content -> banner__title banner__description
+    main-block main-content main__title main__description -> main-img -> main-img__item -> tokyo,paris, ...
+    footer-block -> footer-contact footer-contact__address footer-contact__tel
+- vi du dat ten cac class trong as3
+    nav-block 
+        nav-menu 
+            nav-menu__item
+    banner-block 
+        banner-content 
+            banner-content__title 
+            banner-content__description
+    main-block 
+        main-content
+            main-content__title
+            main-content__description
+        main-img
+            main-img-item
+                main-img-item__mexico
+                main-img-item__newyork
+            main-img-item
+                main-img-item__tokyo
+                main-img-item__paris
+            main-img-item
+                main-img-item__invite
+    value-block
+        value-content
+            value-travel
+                value-travel__title
+                value-travel__description
+                value-travel__url
+            value-host
+                value-host__title  
+                value-host__description  
+                value-host__url
+            value-trust
+                value-trust__title
+                value-trust__description
+                value-trust__url  
+- khi co class cho tat cac cac khoi cung nhu element, se de dang set css sau nay
+- day la dieu BEM dang lam tot vi no set class cho tat ca cac block, element trong html
