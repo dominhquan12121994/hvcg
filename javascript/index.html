@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p id="header__content" class="header__content">this is a para with id = "header__content"</p>
+    <button type="button" onclick="changeContent()">click me</button>
+    <hr>
+    <button onclick="pickCar()" type="button">car</button>
+    <img id="myVehicle" src="./bike.jpg" alt="bike">
+    <button onclick="pickBike()" type="button">bike</button>
+    <hr>
+    <button onclick="hideImage()" >hide image</button>
+    <button onclick="showImage()">show vehicle</button>
+    <hr>
+    <h1 id="h1Message">paragrap</h1>
+    <button onclick="changeMessage()">change h1</button>
+    <hr>
+    <button onclick="makeAlert(5, 10)">alert me</button>
+    <hr>
+    <p id="number">click button to know 10 + 20</p>
+    <button onclick="addNumber(10, 20)">click me</button>
+    <hr>
+    <p>the follow statement is equal</p>
+    <p>function test1 similar test2 but test2 don't have variable x</p>
+    <hr>
+    <p>this follow statement convert from fahrenheit to celsius</p>
+    <button onclick="convertMe()">click me to convert fahrenheit to celcius</button>
+    <p id="toCelcius"></p>  
+    <hr>
+    <p>declare an object have a property fullName = firstName + lastName use this</p>
+    <hr>
+    <p>the follow statement will change button when user click on button</p>
+    <button onmouseout="console.log('mouse out this')" onmouseover="console.log('mouseover this')" onclick="this.innerHTML = Date()">this time is?</button>
+    <textarea onchange="console.log('haha')" name="fname" id="" cols="30" rows="10"></textarea>
+    <p onload="console.log('page loaded')"></p>
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
