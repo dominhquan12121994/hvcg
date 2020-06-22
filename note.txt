@@ -133,3 +133,18 @@ body {
                 value-trust__url  
 - khi co class cho tat cac cac khoi cung nhu element, se de dang set css sau nay
 - day la dieu BEM dang lam tot vi no set class cho tat ca cac block, element trong html
+- giu alt + click con mat cua logo de vao che do trong suot
+- save for web
+- f12 de tro lai file ban dau sau khi cat duoc anh
+- vao chu t de xem duoc font chu, kich thuoc chu
+- nho tiet kiem div
+- duong dan den file trong css khong can "", chi can ../
+- quy trinh: tao khoi -> chinh cac element -> padding, margin
+- ctrl + parth de check anh
+- voi nhung class da dung roi va trung nhau luon dung #id de tranh anh huong de cac element da set tu truoc
+- cac moc phan giai de lan responsive: small 480px; medium 768px; large 992px; extra large 1200px
+- se phai lam cac media query:
+@media screen and (max-width: 1200px) {} 
+@media screen and (max-width: 992px) {} 
+@media screen and (max-width: 768px) {} 
+@media screen and (max-width: 480px) {} 

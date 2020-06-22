@@ -5,36 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 0. reuseable */
         :root {
             font-size: 62.5%;
         }
 
         * {
             box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
         }
 
         body {
             margin: 0px;
             font-size: 1.6rem;
         }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+        /* 0e. end of reuseable */
+        /* ----------------------- */
+        /* 1. navigation section */
+        .nav-block {
+            width: 100%;
+            background-color: #eef;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            overflow: auto;
+            margin: 0px 5%;
+        }
+
+        .nav-menu__item {
+            display: inline-block;
+            padding: 20px 20px;
+        }
+
+        .nav-menu__url {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: #333;
+        }
+        /* 1. end of navigation section */
+        /* ----------------------- */
+        /* 2. banner section */
+        .banner-block {
+            background-image: url("./img/background.png");
+            background-size: 100%;
+            height: 430px;
+        }
+
+        .banner-content {
+            padding: 12% 0% 0% 10%;
+        }
+
+        .banner-content__title {
+            font-size: 5rem;
+            color: white;
+        }
+
+        .banner-content__description {
+            font-size: 2.5rem;
+            color: white;
+        }
+        /* 2e. end of banner section */
+        /* ----------------------- */
+        /* 3. main section */
+        .main-block {
+            background-color: #ccc;
+            padding-bottom: 3%;
+        }
+
+        .main-content {
+            margin: 0 5%;
+        }
+
+        .main-content__title {
+            font-size: 3rem;
+            color: #333;
+            padding-top: 3%;
+            padding-left: 1.665%;
+            padding-bottom: 1%;
+        }
+
+        .main-content__description {
+            font-size: 2rem;
+            color: #333;
+            padding-bottom: 3%;
+            padding-left: 1.665%;
+        }
+
+        .main-img {
+            display: flex;
+            margin: 0 5%;
+        }
+
+        .main-img-item {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-img-item__mexico,
+        .main-img-item__newyork,
+        .main-img-item__tokyo,
+        .main-img-item__paris {
+            height: 50%;
+            padding: 5%;
+        }
+
+        .main-img-item__invite {
+            height: 100%;
+            padding: 5%;
+        }
+        /* 3e. end of main section */
+        /* ------------------------ *
+        /* 4. value section */
+        .value-block {
+            width: 90%;
+            margin: 0 5%;
+        }
+
+        .value-content {
+            display: flex;
+        }
+
+        .value-travel,
+        .value-host,
+        .value-trust {
+            width: 33.33%;
+        }
+
+        .value-travel__title,
+        .value-host__title,
+        .value-trust__title {
+            font-size: 3rem;
+            padding-left: 5%;
+            padding-top: 8%;
+            margin-bottom: 2%;
+        }
+
+        .value-travel__description,
+        .value-host__description,
+        .value-trust__description {
+            font-size: 2.2rem;
+            padding-left: 5%;
+            line-height: 3rem;
+        }
+
+        .value-travel__url,
+        .value-host__url,
+        .value-trust__url {
+            font-size: 2.2rem;
+            text-decoration: none;
+            padding-left: 5%;
+            padding-bottom: 8%;
+            display: block;
+            padding-top: 2%;
+        }
+
+        /* 4e. end of value section */
     </style>
 </head>
 <body>
+    <!-- 1. navigation section -->
     <section class="nav-block">
         <ul class="nav-menu">
-            <li class="nav-menu__item"><a href="#">Brand</a></li>
-            <li class="nav-menu__item"><a href="#">Browse</a></li>
-            <li class="nav-menu__item"><a href="#">Sign Up</a></li>
-            <li class="nav-menu__item"><a href="#">Log In</a></li>
-            <li class="nav-menu__item"><a href="#">Help</a></li>
+            <li class="nav-menu__item left"><a class="nav-menu__url" href="#">Brand</a></li>
+            <li class="nav-menu__item left"><a class="nav-menu__url" href="#">Browse</a></li>
+            <li class="nav-menu__item right"><a class="nav-menu__url" href="#">Sign Up</a></li>
+            <li class="nav-menu__item right"><a class="nav-menu__url" href="#">Log In</a></li>
+            <li class="nav-menu__item right"><a class="nav-menu__url" href="#">Help</a></li>
         </ul>
     </section>
+    <!-- 1e. end of navigation section -->
+    <!-- ----------------------- -->
+    <!-- 2. banner section -->
     <section class="banner-block">
         <div class="banner-content">
             <h1 class="banner-content__title">Find a place to stay</h1>
             <p class="banner-content__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, distinctio.</p>
         </div>
     </section>
+    <!-- 2e. end of banner section -->
+    <!-- ----------------------- -->
+    <!-- 3. main section -->
     <section class="main-block">
         <div class="main-content">
             <h3 class="main-content__title">Neighborhood Guides</h3>
@@ -54,24 +216,28 @@
             </div>
         </div>
     </section>
+    <!-- 3e. end of main section -->
+    <!-- ----------------------- -->
+    <!-- 4. value section -->
     <section class="value-block">
         <div class="value-content">
             <div class="value-travel">
                 <h3 class="value-travel__title">Travel</h3>
                 <p class="value-travel__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quam nemo perferendis sint repellendus eius optio sapiente et, sed vel!</p>
-                <a href="#" class="value-travel-url">Rem ipsum dolor sit amet consectetur.</a>
+                <a href="#" class="value-travel__url">Rem ipsum dolor sit amet consectetur.</a>
             </div>
             <div class="value-host">
                 <h3 class="value-host__title">Host</h3>
                 <p class="value-host__description">Consectetur adipisicing elit. Minima quam nemo perferendis sint repellendus eius optio sapiente et, sed vel!</p>
-                <a href="#" class="value-host-url">Ipsum dolor sit amet consectetur.</a>
+                <a href="#" class="value-host__url">Ipsum dolor sit amet consectetur.</a>
             </div>
             <div class="value-trust">
                 <h3 class="value-trust__title">Trust and Safety</h3>
                 <p class="value-trust__description">Sum dolor sit amet consectetur adipisicing elit. Minima quam nemo perferendis sint repellendus eius optio sapiente et, sed vel!</p>
-                <a href="#" class="value-trust-url">Dolor sit amet consectetur.</a>
+                <a href="#" class="value-trust__url">Dolor sit amet consectetur.</a>
             </div>
         </div>
     </section>
+    <!-- 4e. end of value section -->
 </body>
 </html>
