@@ -6,7 +6,9 @@
     <title>Javascript</title>
     <link rel="stylesheet" href="">
     <style>
-        
+        #myButton {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -41,6 +43,11 @@
     <button onmouseout="console.log('mouse out this')" onmouseover="console.log('mouseover this')" onclick="this.innerHTML = Date()">this time is?</button>
     <textarea onchange="console.log('haha')" name="fname" id="" cols="30" rows="10"></textarea>
     <p onload="console.log('page loaded')"></p>
+    <hr>
+    <p id="yourName"> </p>
+    <p id="yourCity"> </p>
+    <p onchange="makeButton()" id="yourTel"> </p>
+    <button id="myButton">next step</button>
 
 
 

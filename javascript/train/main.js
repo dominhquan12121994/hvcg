@@ -77,3 +77,39 @@ console.log(randomPerson.fullName());
 var someText = "dsahldsjald";
 console.log(someText.length);
 console.log("we are call \"viking\" from the north");
+
+var x = "john";
+var y = new String("john");
+
+console.log(y);
+console.log(typeof(y));
+
+console.log(x==y);
+// explain this
+console.log(x===y); 
+// explain this
+
+var x1 = 100 / "apple";
+console.log(isNaN(x1));
+
+alert("welcome to your first javascript application");
+var yourName = prompt("please input your name: ");
+document.getElementById("yourName").innerHTML = yourName;
+
+var yourCity = prompt("please input your city: ");
+document.getElementById("yourCity").innerHTML = yourCity;
+
+var yourTel = prompt("please input your phone number: ");
+document.getElementById("yourTel").innerHTML = yourTel;
+
+alert("thank for provide your information");
+document.getElementById("myButton").style.display = "block";
+
+
+
+console.log(typeof(x2));
+
+var val = "all people"
+hello = (a) => console.log("hello" + a);
+hello(val);
+

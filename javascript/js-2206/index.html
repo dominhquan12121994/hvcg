@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p id="demo">this is paragraph</p>
+    <script>
+        alert(document.getElementById("demo").innerHTML);
+        // document.getElementById("demo"): tro den phan tu co id = demo
+        // innerHTML: lay toan bo noi dung trong element vua tro den
+        // = : gan cho noi dung bang noi dung moi
+        document.getElementById("demo").innerHTML = "paragraph was changed";
+    </script>
+    <hr>
+    <p id="para1">this is para1</p>
+    <p id="para2">this is para2</p>
+    <button type="button" onclick="changePara()">Try it</button>
+    <script>
+        function changePara() {
+            document.getElementById("para1").innerHTML = "the para1 was changed";
+            document.getElementById("para2").innerHTML = "the para2 was changed too";
+        }
+    </script>
+</body>
+</html>
