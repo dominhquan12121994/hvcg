@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment1</title>
+    <style>
+        button {
+            display: none;
+            border: 0px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            color: red;
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ứng dụng thu thập thông tin cá nhân</h1>
+    <p id="myName"></p>
+    <script>
+        alert("Please provide your information");
+        var myName = prompt("Input your name: ");
+        document.getElementById("myName").innerHTML = 
+            "Tên của bạn: <b>" + myName + "</b>";
+    </script>
+    <p id="myCity"></p>
+    <script>
+        var myCity = prompt("Input your city: ");
+        document.getElementById("myCity").innerHTML = 
+            "Thành phố: <b>" + myCity + "</b>";
+    </script>
+    <p id="myTel"></p>
+    <script>
+        var myTel = prompt("Input your phone number: ");
+        document.getElementById("myTel").innerHTML = 
+            "Số điện thoại: <b>" + myTel + "</b>";
+    </script>
+    <button id="myBtn" type="button">next step</button>
+    <script>
+        alert("Thank you so much!");
+        document.getElementById("myBtn").style.display = "block";
+    </script>
+    <!-- <script src="./ja1.js"></script> -->
+</body>
+</html>

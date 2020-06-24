@@ -1,0 +1,11 @@
+var a = 2, b = 5, c = 10;
+document.getElementById("demo1").innerHTML = a + " " + b + " " + c;
+document.getElementById("demo2").innerHTML = a / b / c;
+document.getElementById("demo3").innerHTML = a * b * c;
+document.getElementById("demo4").innerHTML = b % a;
+document.getElementById("demo5").innerHTML = a++;
+document.getElementById("demo6").innerHTML = ++b;
+document.getElementById("demo7").innerHTML = --c;
+document.getElementById("demo8").innerHTML = a += b;
+document.getElementById("demo9").innerHTML = c -= a;
+document.getElementById("demo10").innerHTML = b *= a;
