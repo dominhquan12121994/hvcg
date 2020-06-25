@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JA3</title>
+    <style>
+        @font-face {
+            font-family: monte;
+            src: url("./resource/font/Montserrat-Medium.otf");
+        }
+
+        @font-face {
+            font-family: nunito;
+            src: url("./resource/font/NunitoSans-Regular.ttf");
+        }
+
+        #tableClass {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: monte;
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            line-height: 50px;
+            color: #234700;
+        }
+
+        .main-block {
+            width: 80%;
+            margin: 0 auto;
+            overflow: auto;
+            font-family: nunito;
+            background-color: #0EC67E;
+            color: white;
+            font-size: 16px;
+        }
+
+        .main-item {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            display: flex;
+        }
+
+        .main-item__title {
+            width: 15%;
+            padding-left: 3%;
+            padding-right: 2%;
+        }
+
+        .main-item__input {
+            width: 30%;
+            padding-left: 10px;
+            font-size: 20px;
+            color: #0EC67E;
+            border: 0px;
+        }
+
+        .main-item__description {
+            width: 60%;
+            padding-left: 3%;
+            padding-right: 2%;
+        }
+
+        .main__btn {
+            display: block;
+            padding: 15px 25px;
+            font-family: monte;
+            font-weight: bold;
+            border: 0px;
+            font-size: 18px;
+            margin: 2% auto 3%;
+            background-color: #0EC67E;
+            color: white;
+        }
+
+        .table-block {
+            margin: 0 auto;
+            font-family: nunito;
+        }
+
+        .table__heading {
+            padding: 10px 20px;
+            color: #0EC67E;
+            border: solid 2px #0EC67E;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CHƯƠNG TRÌNH QUẢN LÝ ĐIỂM THI <br> TRƯỜNG THCS TÔ HIỆU NĂM HỌC 2019-2020</h1>
+    <div class="main-block">
+        <div class="main-item">
+            <p class="main-item__title" for="fname">Họ tên</p>
+            <input class="main-item__input" id="fullName" type="text" name="fname">
+            <p class="main-item__description">Họ tên bắt buộc nhập</p>
+        </div>
+        <div class="main-item">
+            <p class="main-item__title" for="className">Lớp</p>
+            <input class="main-item__input" id="className" type="text" name="class">
+            <p class="main-item__description">Lớp học bắt buộc nhập</p>
+        </div>
+
+        <div class="main-item">
+            <p class="main-item__title" for="math">Điểm Toán</p>
+            <input class="main-item__input" id="mathNum" type="text" name="math">
+            <p class="main-item__description">Điểm Toán bắt buộc nhập và là số nằm trong khoảng từ 0 đến 10</p>
+        </div>
+
+        <div class="main-item">
+            <p class="main-item__title" for="physic">Điểm Lý</p>
+            <input class="main-item__input" id="physicNum" type="text" name="physic">
+            <p class="main-item__description">Điểm Lý bắt buộc nhập và là số nằm trong khoảng từ 0 đến 10</p>
+        </div>
+
+        <div class="main-item">
+            <p class="main-item__title" for="chemis">Điểm Hóa</p>
+            <input class="main-item__input" id="chemisNum" type="text" name="chemis">
+            <p class="main-item__description">Điểm Hóa bắt buộc nhập và là số nằm trong khoảng từ 0 đến 10</p>
+        </div>
+    </div>
+
+    <button class="main__btn" id="writeButton" type="button">NHẬP ĐIỂM</button>
+
+    <table class="table-block" id="tableClass" border="1">
+        <tr>
+            <th class="table__heading">STT</th>
+            <th class="table__heading">Họ tên</th>
+            <th class="table__heading">Lớp</th>
+            <th class="table__heading">Toán</th>
+            <th class="table__heading">Lý</th>
+            <th class="table__heading">Hóa</th>
+            <th class="table__heading">Trung Bình</th>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById("writeButton").addEventListener("click", writeTable);
+        var orderNum = 0;
+        // document.getElementById("writeButton").onclick = writeTable;
+        function writeTable() {
+            var fullName = document.getElementById("fullName").value;
+            var checkData = true;
+
+            if (fullName.length < 1) {
+                checkData = false;
+                alert("Vui lòng nhập họ tên!");
+            }
+
+            var className = document.getElementById("className").value;
+            if (className.length < 1) {
+                checkData = false;
+                alert("Vui lòng nhập tên lớp!");
+            }
+
+            var mathNum = Number(document.getElementById("mathNum").value);
+            if ((((mathNum < 0) | (mathNum > 10)) | (document.getElementById("mathNum").value == "")) | (isNaN(mathNum))) {
+                checkData = false;
+                alert("Vui lòng nhập lại điểm Toán (phải là số trong khoảng từ 0 đến 10)");
+            }
+
+            var physicNum = Number(document.getElementById("physicNum").value);
+            if ((((physicNum < 0) | (physicNum > 10)) | (document.getElementById("physicNum").value == "")) | (isNaN(physicNum))) {
+                checkData = false;
+                alert("Vui lòng nhập lại điểm Lý (phải là số trong khoảng từ 0 đến 10)");
+            }
+
+            var chemisNum = Number(document.getElementById("chemisNum").value);
+            if ((((chemisNum < 0) | (chemisNum > 10)) | (document.getElementById("chemisNum").value == "")) | (isNaN(chemisNum))) {
+                checkData = false;
+                alert("Vui lòng nhập lại điểm Hóa (phải là số trong khoảng từ 0 đến 10)");
+            } else {
+                var averNum = (mathNum + physicNum + chemisNum) / 3;
+                averNum = averNum.toFixed(2);
+            }
+
+            if (checkData) {
+                ++orderNum;
+                renderTable();
+            }
+
+            function renderTable() {
+                var tableContent = document.getElementById("tableClass").innerHTML;
+                tableContent = tableContent + "<tr> <td class=\"table__heading\">" + orderNum + " </td> <td class=\"table__heading\">" + fullName + " </td> <td class=\"table__heading\">" + className + " </td> <td class=\"table__heading\">" + mathNum + " </td> <td class=\"table__heading\">" + physicNum + " </td> <td class=\"table__heading\">" + chemisNum + " </td> <td class=\"table__heading\">" + averNum + " </td> </tr>";
+                document.getElementById("tableClass").innerHTML = tableContent;
+            }
+        }
+    </script>
+</body>
+
+</html>

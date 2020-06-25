@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>name</th>
+            <th>city</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>quan</td>
+            <td>ha noi</td>
+            <td>26</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    <script>
+        console.log(typeof(document.getElementById("table").innerHTML));
+        document.getElementById("table").innerHTML = document.getElementById("table").innerHTML.concat("<tr> <td>quan</td> <td>hcm</td> <td>30</td> </tr>")
+    </script>
+</body>
+</html>
