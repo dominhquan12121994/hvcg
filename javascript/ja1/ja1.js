@@ -1,5 +1,3 @@
-/*
-
 alert("Please provide your information");
 
 var myName = prompt("Input your name: ");
@@ -17,4 +15,3 @@ document.getElementById("myTel").innerHTML =
 alert("Thank you so much!");
 
 document.getElementById("myBtn").style.display = "block";
-*/

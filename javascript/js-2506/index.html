@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 2506</title>
+</head>
+<body>
+    <img src="./background.jpg" alt="error" style="width: 32px; height: 32px;" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+    <hr>
+    <input onkeyup="popUp()" type="text">
+    <hr>
+    <input id="myInput" type="text">
+    <button id="myBtn">hien ket qua</button>
+    <p id="myResult"></p>
+
+    <script>
+        function bigImg(image) {
+            image.style.width = "150px";
+            image.style.height = "150px";
+        }
+
+        function normalImg(image) {
+            image.style.width = "32px";
+            image.style.height = "32px";
+        }
+
+        popUp = () => { alert("you had press a key!"); }
+
+        writeResult = () => { document.getElementById("myResult").innerHTML = document.getElementById("myInput").value.length; }
+
+        document.getElementById("myBtn").addEventListener("click", writeResult);
+
+    </script>
+</body>
+</html>

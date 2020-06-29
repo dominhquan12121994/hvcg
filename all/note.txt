@@ -148,3 +148,33 @@ body {
 @media screen and (max-width: 992px) {} 
 @media screen and (max-width: 768px) {} 
 @media screen and (max-width: 480px) {} 
+
+- JAVASCRIPT
+- indexOf dung trong tim kiem
+- jQuery la cach viet gon hon rat nhieu so voi js standard (js thuan) vi vay phai import cdn (content delivery net: mang phan phoi noi dung) hoac cai dat jQuery vao resource
+- hoisting khong ap dung cho arrow function
+- json la mot dinh dang du lieu, luu duoi dang file .json, hay dung de dinh dang du lieu object, object in array, nest object: luu tru duoi dang {"key" : "value"}
+- co the dung cac ham nhu Parse, Stringify de chuyen qua lai giua dinh dang json va mot kieu du lieu trong javascript nhu object, object in array, nest object
+- muc dich cua json la luu tru du lieu, den khi can dung thi chuyen thanh mot kieu du lieu trong js de su dung
+- ajax stands for asynchronus javascript and xml: xu ly bat dong bo giua js va xhtml
+- dom: document object model: quan ly cac thanh phan cua html, phuc vu cho viec tro dung doi tuong de xu ly: doi tuong co the la element, alert, prompt
+- quy uoc dat ten:
+    - class + id html: BEM, ten id == class
+    - function, variable: camelCase
+    - class js: PascalCase
+    vi du
+    - class + id: main__button
+    - function: sendData, makeBigger
+    - class js: new FrontendDev{}
+- luon khai bao arrow truoc khi dung vi arrow khong co hoisting
+- fontawesome cdn
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+- ajax popper cdn
+    https://unpkg.com/@popperjs/core@2.4.2/dist/umd/popper.min.js
+- alt + z: hien full noi dung trong vs code
+- tab nhay nhanh den thuoc tinh trong dong code
+- float-right phai de trong container hoac container-fluid, khong de trong row
+- dropdown menu required poper ajax
+- each dropdown-menu requied a div btn-group
+- khi viet dropdown chu y day du ca class va js: dropdown-toggle va data-toggle: dropdown
+- justify content center on .row

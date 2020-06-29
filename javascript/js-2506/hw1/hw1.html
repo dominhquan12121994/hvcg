@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="main__text" cols="30" rows="10"></textarea><br>
+    <button id="upper-button">IN HOA</button>
+    <button id="lower-button">in thuong</button>
+    <button id="count-button">Dem</button>
+    <h3>RESULT:</h3>
+    <p id="main__result"></p>
+
+    <script>
+        makeUpper = () => { document.getElementById("main__text").value = document.getElementById("main__text").value.toUpperCase() };
+        makeLower = () => { document.getElementById("main__text").value = document.getElementById("main__text").value.toLowerCase() };
+        countString = () => { document.getElementById("main__text").value = document.getElementById("main__text").value.length };
+
+        document.getElementById("upper-button").addEventListener("click", makeUpper);
+        document.getElementById("lower-button").addEventListener("click", makeLower);
+        document.getElementById("count-button").addEventListener("click", countString);
+    </script>
+</body>
+</html>

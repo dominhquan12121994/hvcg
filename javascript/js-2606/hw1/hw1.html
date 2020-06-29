@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 2606 hw1</title>
+</head>
+
+<body>
+    <h1>XS MIEN BAC</h1>
+    <p>nhap so ban chon: tu 0 den 9</p>
+    <input id="my__input" type="text">
+    <br>
+    <button id="my__button" type="button">quay so</button>
+    <p id="is__number"></p>
+    <p id="my__result"></p>
+
+    <script>
+        document.getElementById("my__button").addEventListener("click", takeNumber);
+
+        function takeNumber() {
+            var inputNumber = Number(document.getElementById("my__input").value);
+            if (((isNaN(inputNumber) || (inputNumber < 0)) || (inputNumber > 9)) || (document.getElementById("my__input").value == "")) {
+                document.getElementById("my__result").innerHTML = "ban phai nhap so tu 0 den 9";
+            } else {
+                document.getElementById("is__number").innerHTML = Math.floor(Math.random() * 10);
+                if (document.getElementById("is__number").innerHTML == document.getElementById("my__input").value) {
+                    document.getElementById("my__result").innerHTML = "chuc mung ban da doan trung xo so mien bac";
+                } else {
+                    document.getElementById("my__result").innerHTML = "ban da doan sai vui long chon lai";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

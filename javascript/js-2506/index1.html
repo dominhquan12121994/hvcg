@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3">please visit microsoft</p>
+    <button id="myBtn">click</button>
+    <p id="demo4"></p>
+
+
+
+    
+    <script>
+        var myStr = "please hihi locate your location 'locate' hahaha"
+        document.getElementById("demo").innerHTML = myStr.indexOf("locate");
+        document.getElementById("demo1").innerHTML = myStr.slice(5, 15);
+        document.getElementById("demo2").innerHTML = myStr.substr(12, 6);
+
+        replaceWord = () => { document.getElementById("demo3").innerHTML = document.getElementById("demo3").innerHTML.replace("microsoft", "my school") }; 
+        document.getElementById("myBtn").addEventListener("click", replaceWord);
+
+        document.getElementById("demo4").innerHTML = myStr.toUpperCase();
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+* {
+    font-size: 1.6rem;
+}
+
+.navbar {
+    background-color: rgba(82, 64, 120, 0.9) !important;
+}
+
+.navbar li a {
+    color: white !important;
+}
+
+.navbar li a:hover {
+    color: black !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-inner h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 15px #000;
+}
+
+.carousel-inner h3 {
+    font-size: 2rem;
+    text-shadow: 5px 5px 15px #000;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10%;
+}
+
+.btn-primary {
+    background-color: rgb(129, 55, 129);
+}
+
+.btn-primary:hover {
+    background-color: rgb(53, 24, 53);
+}
+
+/* jumbotron */
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0px;
+}
+
+.welcome hr {
+    border-top: 2px solid rgba(43, 15, 43, 0.534);
+    width: 95%;
+    margin-bottom: 2rem;
+}
+
+.fa-react,
+.fa-angular,
+.fa-css3 {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.fun {
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.profile-block a {
+    display: block;
+    color: violet;
+    text-align: center;
+}
+
+.contact-block i {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.footer-block {
+    background-color: rgb(75, 29, 75);
+    color: white;
+}
+
+.footer-block hr.light {
+    border-top: 1px solid green;
+    width: 70%;
+}
+

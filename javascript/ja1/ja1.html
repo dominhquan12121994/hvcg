@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,37 +12,39 @@
             padding: 10px 20px;
             text-transform: uppercase;
             color: red;
+            font-weight: bold;
             background-color: yellow;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
     <h1>Ứng dụng thu thập thông tin cá nhân</h1>
-    <p id="myName"></p>
+    <p id="myName"> </p>
     <script>
-        alert("Please provide your information");
-        var myName = prompt("Input your name: ");
-        document.getElementById("myName").innerHTML = 
+        alert("Chào mừng đến với ứng dụng Javascript đầu tiên");
+        var myName = prompt("Hãy nhập tên của bạn: ");
+        document.getElementById("myName").innerHTML =
             "Tên của bạn: <b>" + myName + "</b>";
     </script>
-    <p id="myCity"></p>
+    <p id="myCity"> </p>
     <script>
-        var myCity = prompt("Input your city: ");
-        document.getElementById("myCity").innerHTML = 
+        var myCity = prompt("Hãy nhập thành phố bạn đang sống: ");
+        document.getElementById("myCity").innerHTML =
             "Thành phố: <b>" + myCity + "</b>";
     </script>
-    <p id="myTel"></p>
+    <p id="myTel"> </p>
     <script>
-        var myTel = prompt("Input your phone number: ");
-        document.getElementById("myTel").innerHTML = 
+        var myTel = prompt("Hãy nhập số điện thoại của bạn: ");
+        document.getElementById("myTel").innerHTML =
             "Số điện thoại: <b>" + myTel + "</b>";
     </script>
     <button id="myBtn" type="button">next step</button>
     <script>
-        alert("Thank you so much!");
+        alert("Cảm ơn bạn đã cung cấp thông tin!");
         document.getElementById("myBtn").style.display = "block";
     </script>
-    <!-- <script src="./ja1.js"></script> -->
 </body>
+
 </html>

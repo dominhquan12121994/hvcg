@@ -1,0 +1,79 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* INDEX */
+/* index banner-block */
+#banner-carousel img {
+    width: 100%;
+    height: 550px;
+}
+/* end of index banner-block */
+
+/* index app-block */
+.app-block img {
+    width: 100%;
+}
+
+.app-block {
+    background-image: url("../img/index/app-background.png");
+}
+/* end of index app-block */
+
+/* index procedure-block */
+.procedure-block img {
+    width: 100%;
+}   
+/* index procedure-block */
+
+/* index intro-block */
+.intro-block img {
+    width: 100%;
+}
+/* index intro-block */
+
+/* index ship-block */
+/* end of index ship-block */
+
+
+/* index feedback-block */
+#feedback-carousel img {
+    width: 100%;
+}
+/* end of index feedback-block */
+
+
+/* index stat-block */
+.stat-block {
+    background-image: url("../img/index/stat-block.png");
+    background-size: 100%;
+    height: 500px;
+}
+
+
+
+
+/* end of index stat-block */
+
+
+
+
+
+
+
+/* END OF INDEX */
+
+
+
+
+
+
+/* INTRO */
+/* header-block */
+/* end of header-block */
+/* END OF INTRO */
+
