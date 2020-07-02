@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 2906</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p id="demo1"></p>
+    <button id="my-button">try it</button>
+
+
+
+
+    <script>
+        function checkPoint() {
+            var point = 7, result;
+            if ( point > 5) {
+                result = "you had passed!";
+            } else {
+                result = "you had failed!";
+            }
+            document.getElementById("demo1").innerHTML = result;
+        }
+
+        document.getElementById("my-button").addEventListener("click", checkPoint);
+    </script>
+</body>
+</html>

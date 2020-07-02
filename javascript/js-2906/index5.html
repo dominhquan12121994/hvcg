@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check</button>
+    <p id="result"></p>
+
+
+    <script>
+        function checkNumber() {
+            var number = Number(document.getElementById("my-input").value);
+            if ( (number % 2) == 0 ) {
+                document.getElementById("result").innerHTML = "Day la so chan";
+            } else {
+                document.getElementById("result").innerHTML = "Day la so le";
+            }
+        }
+
+        document.getElementById("my-button").addEventListener("click", checkNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.js"></script>
+</head>
+<body>
+    <p id="test1">this is test1</p>
+    <p id="test2">this is test2</p>
+    <input type="text" id="test3" placeholder="this is test3">
+    <button id="button1">set text</button>
+    <button id="button2">set html</button>
+    <button id="button3">set val</button>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // start
+            $("#button1").click(function() {
+                $("#test1").text("the para was changed");
+            });
+
+            $("#button2").click(function() {
+                $("#test2").html("<b>change html to bold</b>");
+            });
+
+            $("#button3").click(function() {
+                $("#test3").val("value had changed");
+            });
+            // end
+        });
+    </script>
+</body>
+</html>

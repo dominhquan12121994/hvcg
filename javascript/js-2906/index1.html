@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check</button>
+    <p id="result"></p>
+
+
+
+    <script>
+        function checkPoint() {
+            var point = Number(document.getElementById("my-input").value);
+            // if ( point == 10 ) {
+            //     document.getElementById("result").innerHTML = "good student";
+            // } else if ( point == 7) {
+            //     document.getElementById("result").innerHTML = "normal student";
+            // } else {
+            //     document.getElementById("result").innerHTML = "bad student";
+            // }
+
+            if ( (point <= 10) && ( point >= 0 ) ) {
+                document.getElementById("result").innerHTML = "diem dung";
+            } else {
+                document.getElementById("result").innerHTML = "diem sai";
+            }
+        }
+        document.getElementById("my-button").addEventListener("click", checkPoint);
+    </script>
+</body>
+</html>

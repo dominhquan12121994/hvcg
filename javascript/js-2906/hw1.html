@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2906</title>
+    <script src="../jquery/jquery.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check</button>
+    <p id="my-result3">Nhap so ban chon va kiem tra</p>
+    <p id="my-result6"></p>
+    <p id="my-result7"></p>
+
+
+    <script>
+        $(document).ready(function () {
+            // start
+            var i, j;
+
+            // hw1
+            for (i = 0; i <= 100; i++) {
+                console.log(i);
+            }
+
+            // hw2
+            for (i = 100; i >= 0; i--) {
+                console.log(i);
+            }
+
+            // hw3
+            $("#my-button").click(checkNumber);
+            function checkNumber() {
+                var myNumber = Number($("#my-input").val());
+                if (myNumber % 2 == 0) {
+                    $("#my-result3").text("Day la so chan");
+                } else {
+                    $("#my-result3").text("Day la so le");
+                }
+            }
+
+            // hw4
+            for (i = 0; i <= 100; i++) {
+                if (i % 2 != 0) {
+                    console.log(i);
+                }
+            }
+
+            // hw5
+            for (i = 100; i >= 0; i--) {
+                if (i % 2 == 0) {
+                    console.log(i);
+                }
+            }
+
+            // hw6
+            var myStr = "";
+            for (i = 0; i < 5; i++) {
+                myStr = myStr + "*<br>";
+            }
+            $("#my-result6").html(myStr);
+
+            // hw7
+            // myStr = "";
+            // for (i = 0; i < 5; i++) {
+            //     var subStr = "";
+            //     for (j = 0; j < 5; j++) {
+            //         subStr = subStr + "*";
+            //     }
+            //     myStr = myStr + subStr + "<br>"
+            // }
+            // $("#my-result7").html(myStr);
+
+            // end
+        });
+
+    </script>
+</body>
+
+</html>

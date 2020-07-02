@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery.js"></script>
+</head>
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check</button>
+    <p id="my-result">nhap email</p>
+    
+
+
+    <script>
+        $(document).ready(function() {
+            // start  
+
+            // $("#my-button").click(function() {
+            //     var myInput = $("#my-input").val();
+            //     var myPoint = Number(myInput);
+            //     if ( myInput == "" || myPoint < 0 || myPoint > 10 )  {
+            //         $("#my-result").text("Vui long nhap lai (diem phai la so 0 den 10)");
+            //     } else {
+            //         $("#my-result").text("Ban da nhap diem " + myPoint);
+            //     }
+            // });
+
+            $("#my-button").click(function() {
+                var myInput = $("#my-input").val();
+                if(myInput.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+                    $("#my-result").text("Ban da nhap dung email");
+                } else {
+                    $("#my-result").text("Ban da nhap sai email");
+                }
+            });
+
+            var i = 0;
+            while ( i <= 100 ) {
+                console.log(i);
+                i++;
+            }
+
+            i = 100;
+            do {
+                console.log(i);
+                i--;
+            } while ( i >= 0 );
+
+            for ( i = 0 ; i < 10 ; i++ ) {
+                if ( i === 3 ) {
+                    break;
+                }
+                console.log(i);
+            }
+
+            for ( i = 0 ; i < 10 ; i++ ) {
+                if ( i === 3 ) {
+                    continue;
+                }
+                console.log(i);
+            }
+
+
+
+            // end
+        });
+    </script>
+</body>
+</html>

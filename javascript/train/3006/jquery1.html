@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 3006</title>
+    <script src="./jquery.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check</button>
+    <p id="my-result">this is my result</p>
+    <p id="demo1"> <b> demo1 para </b> </p>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // $("#my-button").click(function() {
+            //     $("#my-result").hide();
+            //     $(".button-class").hide();
+            // });
+            $("#my-button").click(function() {
+                $("#demo1").text("you had clicked on button");
+                var myNumber;
+                myNumber = Number($("#my-input").html());
+                console.log(myNumber);
+            });
+
+            $("#my-button").click(makeAlert);
+
+            $("#my-button").hover(function() {
+                alert("you had enter the button");
+            },
+            function() {
+                alert("you had leave the button");
+            });
+
+            function makeAlert() {
+                alert("this is alert");
+            }
+
+
+
+
+
+        });
+    </script>
+</body>
+</html>

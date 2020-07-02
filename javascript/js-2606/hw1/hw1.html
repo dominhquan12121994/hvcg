@@ -8,11 +8,11 @@
 </head>
 
 <body>
-    <h1>XS MIEN BAC</h1>
-    <p>nhap so ban chon: tu 0 den 9</p>
+    <h1>XỔ SỐ MIỀN BẮC</h1>
+    <p>Nhập số bạn chọn (từ 0 đến 9):</p>
     <input id="my__input" type="text">
     <br>
-    <button id="my__button" type="button">quay so</button>
+    <button id="my__button" type="button">QUAY SỐ</button>
     <p id="is__number"></p>
     <p id="my__result"></p>
 
@@ -22,13 +22,13 @@
         function takeNumber() {
             var inputNumber = Number(document.getElementById("my__input").value);
             if (((isNaN(inputNumber) || (inputNumber < 0)) || (inputNumber > 9)) || (document.getElementById("my__input").value == "")) {
-                document.getElementById("my__result").innerHTML = "ban phai nhap so tu 0 den 9";
+                document.getElementById("my__result").innerHTML = "Bạn phải nhập số từ 0 đến 9";
             } else {
                 document.getElementById("is__number").innerHTML = Math.floor(Math.random() * 10);
                 if (document.getElementById("is__number").innerHTML == document.getElementById("my__input").value) {
-                    document.getElementById("my__result").innerHTML = "chuc mung ban da doan trung xo so mien bac";
+                    document.getElementById("my__result").innerHTML = "Chúc mừng bạn đã đoán trúng xổ số miền Bắc :D";
                 } else {
-                    document.getElementById("my__result").innerHTML = "ban da doan sai vui long chon lai";
+                    document.getElementById("my__result").innerHTML = "Bạn đã đoán sai vui lòng chọn lại!";
                 }
             }
         }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+    <script src="../jquery/jquery.js"></script>
+    <style>
+        .my-square {
+            width: 20%;
+            height: 100px;
+            border: 2px solid green;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #my-button {
+            display: block;
+            margin: 5% auto;
+            padding: 2%;
+        }
+
+        #my-input {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #my-label,
+        #my-message {
+            display: block;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-square">
+        <h1 id="my-result"></h1>
+    </div>
+    <button id="my-button">QUAY SỐ</button>
+    <label id="my-label" for="my-input">Nhập số bạn chọn ( từ 0 đến 9 ):</label>
+    <input type="text" id="my-input" name="my-input">
+    <p id="my-message"></p>
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            // start
+            var i = 0;
+            $("#my-button").click(function() {
+                var myResult = Math.floor(Math.random() * 10);
+                $("#my-result").text(myResult);
+                var myNumber = Number($("#my-input").val());
+                if ( $("#my-input").val() == "" || myNumber < 0 || myNumber > 9 ) {
+                    $("#my-message").text("Vui lòng nhập lại!");
+                } else if ( myResult == myNumber ) {
+                    i++;
+                    $("#my-message").text("Bạn đã đoán đúng kết quả xổ số sau " + i + " lần!");
+                    i = 0;
+                } else {
+                    i++
+                    $("#my-message").text("Bạn đã đoán sai " + i + " lần, vui lòng đoán lại!");
+                }
+            });
+
+            // end
+        });
+    </script>
+</body>
+
+</html>

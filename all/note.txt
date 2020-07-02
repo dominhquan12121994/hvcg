@@ -173,8 +173,47 @@ body {
     https://unpkg.com/@popperjs/core@2.4.2/dist/umd/popper.min.js
 - alt + z: hien full noi dung trong vs code
 - tab nhay nhanh den thuoc tinh trong dong code
-- float-right phai de trong container hoac container-fluid, khong de trong row
+- float-right phai de trong container hoac container-fluid, khong de trong row, dung margin-left right
 - dropdown menu required poper ajax
 - each dropdown-menu requied a div btn-group
 - khi viet dropdown chu y day du ca class va js: dropdown-toggle va data-toggle: dropdown
 - justify content center on .row
+- do while chac chan se vao dung ham mot lan, while co the khong duoc lan nao
+- hinh nen mo co the lam background-image: lineear-gradient(black, black), url(img);
+- col-?: 0-575px
+- col-sm-?: 576-767px
+- col-md-?: 768-991px
+- col-lg-?: 992-1199px
+- col-xl-?: 1200-1920px
+example: col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3
+above mean: 
+    0-575px: wrap 12/12 column; ( max 1 devide )
+    576-767px: wrap 12/12 column; ( max 1 devide )
+    768-991px: wrap 6/12 column; ( max 2 devide )
+    992-1199px: wrap 4/12 column; ( max 3 devide )
+    1200-1920px: wrap 3/12 column; ( max 4 devide )
+if write only col-6: it mean 0-1920px: wrap 6/12 column; ( max 2 devide )
+    col-6 col-lg-4: it mean 0-991px: wrap 6/12 column ( max 2 devide )
+                            992-1920px: wrap 4/12 column ( max 3 devide )
+- bootstrap use mobile first, designer desktop first so merge it when code responsive (byside i will desktop first)
+    @media screen and ( min-width: 992px ) {
+        // code with 992-1920px, so need more code with 0-992px
+        h1 {
+            font-size: 3rem;
+        }
+    }
+it mean: 992-1920px: font-size will be 3rem
+so if use max-width, use ( max-width: 575px ) ( max-width: 767px ) ( max-width: 991px ) ( max-width: 1199px )
+- write bigger to smaller
+@media screen and ( max-width: 1199px ) {
+    // code here 0-1199px
+}
+@media screen and ( max-width: 991px ) {
+    // code here 0-991px, write replace above
+}
+@media screen and ( max-width: 767px ) {
+    // code here 0-767px, write replace above
+}
+@media screen and ( max-width: 575px ) {
+    // code here 0-575px, write replace above
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="my-input">
+    <button id="my-button">check it</button>
+    <p id="result"></p>
+
+
+
+    <script>
+        function checkStudent() {
+            var point = Number(document.getElementById("my-input").value);
+            if ( point <= 10 && point >=8 ) {
+                document.getElementById("result").innerHTML = "diem gioi";
+            } else if ( point >= 6.5 && point < 8 ) {
+                document.getElementById("result").innerHTML = "diem kha";
+            } else if ( point >= 5 && point < 6.5 ) {
+                document.getElementById("result").innerHTML = "diem trung binh";
+            } else if ( point >= 0 && point < 5 ) {
+                document.getElementById("result").innerHTML = "diem yeu";
+            } else {
+                document.getElementById("result").innerHTML = "nhap sai diem";
+            }
+        }
+
+        document.getElementById("my-button").addEventListener("click", checkStudent);
+
+
+    </script>
+</body>
+</html>
