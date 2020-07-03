@@ -217,3 +217,11 @@ so if use max-width, use ( max-width: 575px ) ( max-width: 767px ) ( max-width: 
 @media screen and ( max-width: 575px ) {
     // code here 0-575px, write replace above
 }
+
+- $(document).ready(); cau lenh cho phep trinh duyet load het sach DOM truoc khi load script
+- focus, blur tuong tu nhu mouseenter, mouveleave: khac o cho focus, blur thuong dung cho input va chi nhan khi co click
+- mouseenter va mouseleave chi can di chuot vao la da nhan lenh roi.
+- var, let, const
+    var: co the tai khai bao, co the cap nhat gia tri, function/local/global scope
+    let: khong the tai khai bao, co the cap nhat gia tri, block scope
+    const: khong the tai khai bao, khong the cap nhat gia tri moi cho primitive, co the cap nhat value of property cho reference nhu object, array, function, block scope

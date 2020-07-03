@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntroDT247</title>
+    <title>Trang chủ DT247</title>
+    <link rel="shortcut icon" href="./resource/img/index/favicon-index.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <script src="./resource/js/jquery.js"></script>
@@ -19,8 +20,18 @@
     <header class="header-block container-fluid">
         <div class="container">
             <div class="row header-row">
-                <img src="./resource/img/intro/logo.png" alt="logo" class="header__logo">
-                <i class="fas fa-sliders-h header__button ml-4"></i>
+                <a class="p-0" href="./index.html">
+                    <img src="./resource/img/intro/logo.png" alt="logo" class="header__logo">
+                </a>
+                <div class="btn-group">
+                    <button class="fas fa-sliders-h header__button ml-4" data-toggle="dropdown"></button>
+                    <div class="dropdown-menu">
+                        <a href="./intro.html" class="dropdown-item">Giới thiệu</a>
+                        <a href="./new.html" class="dropdown-item">Tin tức</a>
+                        <a href="./contact.html" class="dropdown-item">Liên hệ</a>
+                    </div>
+                </div>
+
                 <form class="header-search col-3">
                     <input type="text" class="header__input my-5 pl-4" placeholder="Search...">
                     <i class="fas fa-search header__look"></i>
@@ -526,7 +537,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <button class="btn btn-light btn-outline-dark mb-5 py-2 px-5">Xem thêm</button>
+                <button class="last-button btn btn-light btn-outline-dark mb-5 py-2 px-5">Xem thêm</button>
             </div>
         </div>
     </div>
@@ -544,7 +555,7 @@
                     <li data-target="#feedback-carousel" data-slide-to="1"></li>
                     <li data-target="#feedback-carousel" data-slide-to="2"></li>
                 </ul>
-                <div class="carousel-inner mb-5">
+                <div class="carousel-inner mb-5 pb-4">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 0207</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>this is para 1</p>
+    <p id="para1" style="display: none;">this is para 2</p>
+    <div class="div1">this is div 1
+        <img style="width: 200px;" src="./img1.jpg" alt="" id="img1">
+    </div>
+    <button id="my-button">click to hide</button>
+    
+
+
+    <script>
+        $(document).ready(function() {
+            // start
+            $("#my-button").click(function() {
+                $(".div1").hide();
+                $("#img1").hide();
+                $("#para1").show();
+            });
+            // end
+        });
+    </script>
+</body>
+</html>

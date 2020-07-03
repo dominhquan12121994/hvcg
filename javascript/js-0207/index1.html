@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery/jquery.js"></script>
+</head>
+<body>
+    <p id="my-para">this is para</p>
+    <input type="text" id="my-input">
+    <hr>
+    <p id="demo1">this is demo1</p>
+    <button id="button-1">hide</button>
+    <button id="button-2">show</button>
+    <button id="button-3">toggle</button>
+    <hr>
+    <div style="width: 200px; height: 200px; background-color: red;" id="div1"></div>
+    <button id="button-4">hide</button>
+    <button id="button-5">show</button>
+    <button id="button-6">fadeTo 0.3</button>
+    <button id="button-7">fadeToggle</button>
+
+    <script>
+        $(document).ready(function() {
+            // start
+            $("#my-para").mouseenter(function() {
+                $(this).css("background-color", "yellow");
+            });
+            $("#my-para").mouseleave(function() {
+                $(this).css("background-color", "red");
+            });
+
+
+            $("#my-input").focus(function() {
+                $(this).css("background-color", "red");
+            });
+
+            $("#my-input").blur(function() {
+                $(this).css("background-color", "blue");
+            });
+
+            $("#button-1").click(function() {
+                $("#demo1").hide(333);
+            });
+
+            $("#button-2").click(function() {
+                $("#demo1").show(333);
+            });
+
+            $("#button-3").click(function() {
+                $("#demo1").toggle(333);
+            });
+
+            $("#button-4").click(function() {
+                $("#div1").fadeOut(3333);
+            });
+
+            $("#button-5").click(function() {
+                $("#div1").fadeIn(3333);
+            });
+
+            $("#button-6").click(function() {
+                $("#div1").fadeTo(333, 0.3);
+            });
+            $("#button-7").click(function() {
+                $("#div1").fadeToggle(333);
+            });
+            // end
+        });
+    </script>
+</body>
+</html>

@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
 }
 
 body {
@@ -17,14 +17,18 @@ body {
   font-family: roboto-bo;
 }
 
-@media screen and (max-width: 575px) {
-  .app-block .app-block__title {
-    font-size: 10rem;
-  }
-}
-
 /* INDEX */
 /* index header-block */
+.header-block .header__button {
+  border: 0px;
+  background-color: white;
+}
+
+.header-block a {
+  font-size: 2rem;
+  padding: 1.5rem 6rem;
+}
+
 .header__button {
   font-size: 3rem;
   margin-top: 3%;
@@ -60,6 +64,25 @@ body {
   width: 100%;
   height: 550px;
   opacity: 50%;
+}
+
+.banner-block .carousel-control-prev-icon {
+  background-image: url("../img/index/toleft.png");
+  width: 40px;
+  height: 40px;
+}
+
+.banner-block .carousel-control-next-icon {
+  background-image: url("../img/index/toright.png");
+  width: 40px;
+  height: 40px;
+}
+
+.banner-block .carousel-indicators li {
+  width: 36px;
+  height: 6px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .banner-block .carousel-item {
@@ -185,6 +208,10 @@ body {
   background-color: #f1f1f1;
 }
 
+.ship-block .last-button {
+  font-size: 2rem;
+}
+
 .ship__title {
   font-size: 4rem;
   font-weight: bold;
@@ -250,6 +277,13 @@ body {
 
 /* end of index ship-block */
 /* index feedback-block */
+.feedback-block li {
+  margin-top: 5%;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
 .feedback__title {
   font-size: 4rem;
   font-weight: bold;
@@ -345,6 +379,10 @@ body {
   font-size: 1.6rem;
 }
 
+.footer-block .row {
+  padding-left: 1.5rem;
+}
+
 @media screen and (max-width: 767px) {
   .footer-block iframe {
     margin-bottom: 2%;
@@ -418,7 +456,267 @@ body {
 /* end of index media query */
 /* END OF INDEX */
 /* INTRO */
-/* header-block */
-/* end of header-block */
+/* intro banner-block */
+#intro .banner {
+  background-image: url(../img/index/carousel2.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#intro .banner .title {
+  font-size: 4rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#intro .banner .description {
+  font-size: 1.6rem;
+  color: #c7c4c4;
+  margin-bottom: 15%;
+}
+
+#intro .main-block a {
+  display: block;
+  color: #6d6b6b;
+  margin: 5% 0;
+}
+
+#intro .main-block a i {
+  margin-right: 0.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  #intro .main-block a {
+    text-align: center;
+  }
+}
+
+#intro .main-block .last {
+  margin-bottom: 10%;
+}
+
+#intro .main-block .title {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  #intro .main-block .title {
+    text-align: center;
+  }
+}
+
+#intro .main-block .row {
+  padding-top: 5%;
+}
+
+#intro .main-block hr {
+  height: 3px;
+  width: 10%;
+  background-color: blue;
+  margin-left: 0;
+  margin-top: 3%;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  #intro .main-block hr {
+    margin: auto;
+  }
+}
+
+#intro .main-block .item__img {
+  padding: 3%;
+}
+
+#intro .main-block p {
+  text-align: justify;
+}
+
+/* end of intro banner-block */
 /* END OF INTRO */
+#new .banner {
+  background-image: url(../img/index/carousel2.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#new .banner .title {
+  font-size: 4rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#new .banner .description {
+  font-size: 1.6rem;
+  color: #c7c4c4;
+  margin-bottom: 15%;
+}
+
+#new .main-block i {
+  margin-right: 1.3rem;
+}
+
+#new .main-block a {
+  display: block;
+  color: #6d6b6b;
+  margin: 5% 0;
+}
+
+@media screen and (max-width: 991px) {
+  #new .main-block a {
+    text-align: center;
+  }
+}
+
+#new .main-block .last {
+  margin-bottom: 10%;
+}
+
+#new .main-block .title {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  #new .main-block .title {
+    text-align: center;
+  }
+}
+
+#new .main-block .row {
+  padding-top: 5%;
+}
+
+#new .main-block hr {
+  height: 3px;
+  width: 10%;
+  background-color: blue;
+  margin-left: 0;
+  margin-top: 3%;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 991px) {
+  #new .main-block hr {
+    margin: auto;
+  }
+}
+
+#new .main-block .item__img {
+  padding: 0;
+}
+
+#new .main-block p {
+  text-align: justify;
+}
+
+#new .main-block .main-item i {
+  color: orangered;
+}
+
+#new .main-block .main-item img {
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 991px) {
+  #new .main-block .main-item p {
+    text-align: center;
+  }
+}
+
+#new .main-block .main-intro .day,
+#new .main-block .main-intro .description {
+  font-family: roboto-re;
+}
+
+#new .main-block .main-intro i {
+  color: orangered;
+}
+
+#new .main-block .main-intro img {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+#new .main-block .main-intro h3 {
+  margin-bottom: 2%;
+}
+
+#contact .banner {
+  background-image: url(../img/index/carousel2.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contact .banner .title {
+  font-size: 4rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#contact .banner .description {
+  font-size: 1.6rem;
+  color: #c7c4c4;
+  margin-bottom: 15%;
+}
+
+#contact .main-block {
+  height: 100%;
+}
+
+#contact .main-block button {
+  font-size: 1.8rem;
+}
+
+#contact .main-block p {
+  font-size: 1.6rem;
+}
+
+#contact .main-block .main-contact {
+  top: -150px;
+}
+
+@media screen and (max-width: 991px) {
+  #contact .main-block .main-contact .address {
+    text-align: center;
+  }
+}
+
+#contact .main-block .contact-form {
+  background-color: #f3f3f3;
+}
+
+#contact .main-block .contact-form .full-name,
+#contact .main-block .contact-form .tel {
+  width: 48%;
+}
+
+#contact .main-block .contact-form .tel {
+  margin-left: 4%;
+}
+
+#contact .main-block .contact-form textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  #contact .main-block .contact-form h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #contact .main-block .contact-form button {
+    display: block;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
