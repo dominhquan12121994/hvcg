@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js 0307</title>
+    <script src="../jquery/jquery.js"></script>
+    <style>
+        .div1 {
+            width: 500px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+
+        .div2 {
+            width: 500px;
+            height: 400px;
+            background-color: green;
+            display: none;
+        }
+        
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">this is div 1</div>
+    <div class="div2">this is div 2</div>
+    <button id="my-button">animate</button>
+    <hr>
+    <p id="para1">this is para1</p>
+    <button id="button1">hide p call back alert</button>
+    <hr>
+    <p id="para2">this is <b>para</b> 2 hehehe</p>
+    <button id="button2">show text</button>
+    <button id="button3">show html</button>
+    <hr>
+    <input type="text" id="input1">
+    <button id="button4">take value</button>
+    <hr>
+    <img id="img1" src="../js-0207/img1.jpg" title="photo111" alt="photo1">
+    <button id="button5">take src</button>
+    <hr>
+    <button id="button6">set text</button>
+    <button id="button7">set html</button>
+    <button id="button8">set value</button>
+    <button id="button9">change image</button>
+    <hr>
+    <ol id="ol1">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ol>
+    <button id="button10">append</button>
+    <button id="button11">prepend</button>
+
+
+    <script>
+        $(document).ready(function() {
+            // start
+            $(".div1").click(function() {
+                $(".div2").slideToggle(333);
+            });
+
+            $("#my-button").click(function() {
+                $(".div1").animate({
+                    left: "250px",
+                    width: "1000px",
+                    opacity: "0.5",
+                }).animate({
+                    fontSize: "3rem"
+                });
+            });
+
+            $("#button1").click(function() {
+                $("#para1").hide(1000, function() {
+                    alert("para hided");
+                });
+            });
+
+            $("#button2").click(function() {
+                alert($("#para2").text());
+            });
+
+            $("#button3").click(function() {
+                alert($("#para2").html());
+            });
+
+            $("#button4").click(function(){
+                alert($("#input1").val());
+            });
+
+            $("#button5").click(function(){
+                alert($("#img1").attr("src"));
+            });
+
+            $("#button6").click(function() {
+                $("#para2").text("hello world");
+            });
+
+            $("#button7").click(function() {
+                $("#para2").html("this is <b> bold </b> text");
+            });
+
+            $("#button8").click(function() {
+                $("#input1").val("hello input");
+            });
+
+            $("#button9").click(function() {
+                $("#img1").attr({
+                    "src": "../train/bike.jpg",
+                    "alt": "photo changed",
+                    "title": "photo222"
+                });
+            });
+
+            $("#button10").click(function() {
+                $("#ol1").append("<li>append item</li>");
+            });
+
+            $("#button11").click(function() {
+                $("#ol1").prepend("<li>prepend item</li>");
+            });
+
+            
+            // end
+        });
+    </script>
+</body>
+</html>

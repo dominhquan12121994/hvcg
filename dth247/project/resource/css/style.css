@@ -66,6 +66,11 @@ body {
   opacity: 50%;
 }
 
+.banner-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .banner-block .carousel-control-prev-icon {
   background-image: url("../img/index/toleft.png");
   width: 40px;

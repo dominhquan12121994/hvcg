@@ -113,6 +113,12 @@ body {
 }
 
 .banner-block {
+    img {
+        object-fit: cover;
+    }
+}
+
+.banner-block {
     .carousel-control-prev-icon {
         background-image: url("../img/index/toleft.png");
         width: 40px;
@@ -131,7 +137,6 @@ body {
         margin-right: 6px;
         margin-left: 6px;
     }
-
 }
 
 .banner-block .carousel-item {
